@@ -9,6 +9,7 @@ Thumbs.db
 .env
 .cache
 __MACOSX/
+.idea
 
 # Node modules and output
 node_modules
