@@ -1,0 +1,25 @@
+
+
+@function toRem($value) {
+    $remValue: ($value / 16) + rem;
+    @return $remValue;
+}
+
+@mixin Tablet {
+    @media (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin Mobile {
+    @media (max-width: 700px) {
+        @content;
+    }
+}
+
+@mixin MobileMini {
+    @media (max-width: 400px) {
+        @content;
+    }
+}
+

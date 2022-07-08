@@ -1,4 +1,9 @@
 {
-  "name": "Issue 33",
-  "url": "https://issue33.com"
+  "url": "http://example.com",
+  "en": {
+    "description": "Site meta description"
+  },
+  "ru": {
+    "description": "Описание страницы в мета"
+  }
 }

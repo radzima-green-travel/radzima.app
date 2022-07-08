@@ -1,0 +1,8 @@
+<%
+var pattern = '^(\/' + locale + ')';
+var reg = new RegExp(pattern, '');
+var altpath = '/' + altlang;
+%>
+<% if(typeof locals.noaltlang === 'undefined'){ %>
+<link href="<%= page.url.replace(reg, altpath) %>" rel="alternate" hreflang="<%= altlang %>">
+<% } %>

@@ -1,0 +1,34 @@
+---
+date: Last Modified
+---
+<!DOCTYPE html>
+<%
+locale = locale || 'en';
+site[locale] = site[locale] || {};
+lang[locale] = lang[locale] || {};
+var pageDescription = locals.description || site[locale].description;
+%>
+<html lang="<%= locale %>">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title><%= locals.title %></title>
+<meta name="description" content="<%= pageDescription %>" />
+<%- include('/altlang') %>
+<link rel="stylesheet" href="/assets/main.css?<%- cacheBust.mainCss %>" />
+<link rel="icon" type="image/png" href="/images/logo-icon.svg" />
+</head>
+<body>
+
+<div class="page-layout">
+  <%- include('/header') %>
+  <main class="main">
+    <%- content -%>
+  </main>
+  <%- include('/footer') %>
+</div>
+
+<script src="/assets/main.js?<%- cacheBust.mainJs %>"></script>
+</body>
+</html>

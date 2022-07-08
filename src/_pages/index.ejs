@@ -1,0 +1,27 @@
+---
+layout: default.ejs
+title: Radzima App
+---
+<script>
+var locale = 'en';
+if(window.navigator && window.navigator.languages && window.navigator.languages[0] && window.navigator.languages[0].indexOf('ru') === 0) {
+    locale = 'ru';
+}
+window.location.replace('/'+locale);
+</script>
+
+<div class="container">
+    <h1>Radzima App</h1>
+    
+    <div class="container">
+        <ul class="c-sitemap-list">
+        <% collections.all.forEach((page) => { %>
+            <li>
+                <a href="<%= page.url %>"><%= page.data.title %></a>
+                <div class="c-sitemap-url"><%= site.url %><%= page.url %></div>
+            </li>
+        <% }); %>
+        </ul>
+    </div>
+
+</div>
