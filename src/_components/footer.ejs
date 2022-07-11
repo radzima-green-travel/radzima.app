@@ -13,7 +13,9 @@
         <h2>Мы становимся лучше благодаря вам</h2>
         <p>Расскажите нам о своем опыте работы с Radzima.</p>
         <p>Пожалуйста, поделитесь отзывом, помогите нам стать сильнее и лучше</p>
-        <button type="button" class="btn-primary">Связаться с нами</button>
+        <button type="button" class="btn-primary">
+            <%= lang[locale].feedbackBtn %>
+        </button>
     </div>
 </div>
 <footer class="footer">
@@ -26,7 +28,7 @@
             <a href="#"><img alt="Download on the App Store" src="/images/app-apple-black.png" width="134" height="40"></a>
         </div>
         <div class="footer__links">
-            <a href="#">Политика Конфиденциальности</a>
+            <a href="#"><%= lang[locale].privacyPolicy %></a>
         </div>
     </div>
 </footer>

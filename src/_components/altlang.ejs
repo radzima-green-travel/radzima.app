@@ -1,8 +1,9 @@
 <%
+var langs = Object.keys(lang).filter(el => el !== locale);
 var pattern = '^(\/' + locale + ')';
 var reg = new RegExp(pattern, '');
 var altpath = '/' + altlang;
 %>
-<% if(typeof locals.noaltlang === 'undefined'){ %>
-<link href="<%= page.url.replace(reg, altpath) %>" rel="alternate" hreflang="<%= altlang %>">
-<% } %>
+<% langs.forEach((lang) => { %>
+<link href="<%= page.url.replace(reg, lang) %>" rel="alternate" hreflang="<%= lang %>">
+<% }); %>
