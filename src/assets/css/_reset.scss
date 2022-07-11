@@ -12,14 +12,14 @@ menu, details, summary, figure, figcaption { display: block; }
 
 html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 100%; }
 html, body { height: 100%; }
-body { font: toRem(18)/1.6 Helvetica, sans-serif; letter-spacing: .01em; color: $color-text; background: $color-page-bg; }
+body { font: toRem(18)/1.6 $systemFonts; letter-spacing: .01em; color: $color-text; background: $color-page-bg; }
 a { color: inherit; text-decoration: underline; cursor: pointer; }
 a:hover { text-decoration: none; }
 h1 { font-size: toRem(32); }
 h2 { font-size: toRem(24); }
 h3 { font-size: toRem(18); font-weight: normal; }
 h4 { font-size: toRem(16); }
-h1, h2, h3, h4, h5 { font-weight: normal; font-family: 'Helvetica Neue', Helvetica, sans-serif; line-height: 1.45; color: $color-text-head; }
+h1, h2, h3, h4, h5 { font-weight: 600; line-height: 1.45; color: $color-text-head; }
 @include Tablet {
     body { font-size: toRem(16); }
     h1 { font-size: toRem(24); }
