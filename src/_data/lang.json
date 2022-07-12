@@ -1,0 +1,14 @@
+{
+    "ru": {
+        "sitemap": "Карта сайта",
+        "download": "Скачать",
+        "privacyPolicy": "Политика Конфиденциальности",
+        "feedbackBtn": "Связаться с нами"
+    },
+    "en": {
+        "sitemap": "Site map",
+        "download": "Download",
+        "privacyPolicy": "Privacy Policy",
+        "feedbackBtn": "Connect Us"
+    }
+}

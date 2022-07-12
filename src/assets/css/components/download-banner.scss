@@ -1,0 +1,69 @@
+.c-download-banner {
+    padding: 72px 0 64px;
+    background: #239F0F;
+    color: #fff;
+    
+    .container {
+        display: flex;
+    }
+    
+    h2 {
+        max-width: 560px;
+        color: inherit;
+    }
+}
+.c-download-banner__btns {
+    flex-shrink: 0;
+    display: flex; align-items: center;
+    margin-left: auto;
+
+    a {
+        margin-left: 40px;
+        transition: opacity .3s;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}
+
+@include Tablet {
+    .c-download-banner {
+        padding: 50px 0;
+    }
+    .c-download-banner__btns {
+        margin-left: 40px;
+
+        a {
+            margin-left: 16px;
+        }
+        img {
+            width: auto;
+            height: 40px;
+        }
+    }
+}
+
+@include Mobile {
+    .c-download-banner {
+        padding: 90px 0 50px;
+        background: #239F0F url(../../images/bg-curve-grn.svg) 50% 20px no-repeat;
+        background-size: contain;
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            margin-bottom: 26px;
+            text-align: center;
+        }
+    }
+    .c-download-banner__btns {
+        margin: 0 -16px;
+
+        a {
+            margin: 0 8px;
+        }
+    }
+}

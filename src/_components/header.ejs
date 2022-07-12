@@ -1,0 +1,22 @@
+<header class="header">
+    <div class="container">
+        <a href="/<%= locale %>" class="header__logo">
+            <span class="u-visually-hidden">Radzima</span>
+        </a>
+        <div class="header__lang">
+            <%- include('/lang') %>
+        </div>
+        <div class="header__btn">
+            <button type="button" class="btn-primary"><%= lang[locale].download %></button>
+        </div>
+        <button type="button" class="header__nav-btn u-mobile-only"></button>
+        <div class="header__nav-content u-mobile-only">
+            <div class="header__lang">
+                <%- include('/lang') %>
+            </div>
+            <div class="header__btn">
+                <button type="button" class="btn-primary"><%= lang[locale].download %></button>
+            </div>
+        </div>
+    </div>
+</header>

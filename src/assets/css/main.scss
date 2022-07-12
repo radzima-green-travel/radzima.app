@@ -1,0 +1,86 @@
+
+.page-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main {
+    flex-grow: 1;
+    padding-bottom: 30px;
+}
+
+.u-mobile-only { display: none; }
+@include Mobile {
+    .u-mobile-only { display: block; }
+}
+
+.u-hidden {
+    display: none !important;
+}
+
+.u-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap; 
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @include Mobile {
+        padding: 0 16px;
+    }
+}
+
+.btn-primary {
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    height: 48px;
+    padding: 0 40px;
+    border: 0;
+    border-radius: 4px;
+    background: $color-btn-bg;
+    font-size: toRem(14);
+    line-height: 1;
+    color: #fff;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    transition: background .3s;
+
+    &:hover {
+        background: $color-btn-bg-over;
+    }
+
+    @include Tablet {
+        height: 40px;
+        padding: 0 33px;
+        font-size: 12px;
+    }
+    @include Mobile {
+        height: 36px;
+    }
+}
+
+.btn-inline {
+    display: inline-block;
+    background: none;
+    border: 0;
+    font: inherit;
+    color: inherit;
+}
+
+.c-sitemap-list {
+    li {
+        margin-bottom: 10px;
+    }
+}
+.c-sitemap-url {
+    font-size: 0.8em;
+}

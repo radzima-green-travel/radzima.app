@@ -1,0 +1,5 @@
+{
+  "permalink": "<%- page.filePathStem.replace('/_pages', '').replace('/index', '') %>/index.html",
+  "locale": "",
+  "altlang": "ru"
+}

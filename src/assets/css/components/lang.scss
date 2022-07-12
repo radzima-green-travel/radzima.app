@@ -1,0 +1,51 @@
+.c-lang {
+    position: relative;
+}
+.c-lang__val {
+    position: relative;
+    padding: 2px 35px 2px 10px;
+    background: none;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    color: $color-text-head;
+    text-transform: uppercase;
+
+    &::before {
+        content: '';
+        position: absolute; right: 8px; top: 9px;
+        width: 14px; height: 9px;
+        background: url(../../../images/icon-dpd.svg) no-repeat;
+        transition: transform .2s;
+    }
+}
+.c-lang__options {
+    display: none;
+    position: absolute; top: 100%; left: 0;
+    margin-left: -10px;
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid rgba(235, 235, 245, 0.7);
+    box-shadow: 0px 0px 20px rgba(217, 217, 217, 0.25);
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    color: $color-text-head;
+    text-transform: uppercase;
+
+    a {
+        display: block;
+        padding: 2px 10px;
+    }
+}
+.c-lang--opened {
+    .c-lang__val {
+        &::before {
+            top: 12px;
+            transform: rotate(180deg);
+        }
+    }
+    .c-lang__options {
+        display: block;
+    }
+}

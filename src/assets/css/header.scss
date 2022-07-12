@@ -1,0 +1,142 @@
+.header {
+    margin-bottom: 30px;
+    
+    > .container {
+        display: flex; align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: toRem(30);
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+.header__logo {
+    flex-shrink: 0;
+    width: 176px; height: 48px;
+    margin-right: auto;
+    background: url(../images/logo.svg) 50% / cover no-repeat;
+    transition: opacity .3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+.header__btn {
+    margin-left: 53px;
+}
+.header__nav-btn {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: 7px;
+        width: 22px;
+        height: 18px;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 17px;
+        left: 7px;
+        width: 22px;
+        height: 2px;
+        background: #000;
+    }
+}
+
+.header__nav-content {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    padding: 93px 16px 16px;
+    background: #fff;
+
+    .header__lang {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 23px;
+    }
+    .header__btn {
+        display: block;
+        margin-left: 0;
+
+        .btn-primary {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.mobile-nav-opened {
+    .header__logo {
+        position: relative;
+        z-index: 101;
+    }
+    .header__nav-btn {
+        z-index: 101;
+
+        &::before {
+            content: '';
+            top: 17px;
+            width: 22px;
+            height: 2px;
+            background: #000;
+            border: 0;
+            transform: rotate(45deg);
+            transition: transform .3s;
+        }
+        &::after {
+            transform: rotate(-45deg);
+            transition: transform .3s;
+        }
+    }
+}
+
+@include Tablet {
+    .header__logo {
+        width: 147px;
+        height: 40px;
+    }
+    .header__btn {
+        margin-left: 43px;
+    }
+}
+
+@include Mobile {
+    .header {
+        margin-bottom: 20px;
+        
+        > .container {
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+    }
+    .header__lang,
+    .header__btn {
+        display: none;
+    }
+    .header__logo {
+        width: 115px;
+        height: 30px;
+    }
+    .mobile-nav-opened {
+        overflow: hidden;
+
+        .header__nav-content {
+            display: block;
+        }
+    }
+}
+

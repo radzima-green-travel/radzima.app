@@ -1,0 +1,16 @@
+---
+layout: default.ejs
+title: Site map
+eleventyExcludeFromCollections: true
+---
+
+<div class="container">
+    <ul class="c-sitemap-list">
+    <% collections.all.forEach((page) => { %>
+        <li>
+            <a href="<%= page.url %>"><%= page.data.title %></a>
+            <div class="c-sitemap-url"><%= site.url %><%= page.url %></div>
+        </li>
+    <% }); %>
+    </ul>
+</div>
