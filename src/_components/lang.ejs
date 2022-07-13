@@ -1,16 +1,16 @@
 <%
 var langs = Object.keys(lang);
 %>
-<div class="c-lang">
+<ul class="c-lang">
 <% langs.forEach((lang) => { 
     if(lang === locale) {
     %>
-    <strong><%= lang %></strong>
+    <li class="c-lang__current"><%= lang %></li>
     <%
     } else {
     %>
-    <a href="/<%= lang %>"><%= lang %></a>
+    <li><a href="/<%= lang %>"><%= lang %></a></li>
     <%
     }
 }); %>
-</div>
+</ul>
