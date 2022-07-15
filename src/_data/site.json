@@ -1,5 +1,8 @@
 {
   "url": "http://example.com",
+  "appGooglePlay": "https://play.google.com/store/apps/details?id=app.radzima",
+  "appAppleStore": "https://apps.apple.com/app/radzima/id1587158874",
+  "privacyPolicy": "https://www.epam.com/privacy-policy",
   "en": {
     "description": "Site meta description"
   },

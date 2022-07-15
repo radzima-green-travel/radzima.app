@@ -9,14 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.classList.toggle('mobile-nav-opened');
         });
     }
-
-    const extLinks = document.querySelectorAll("a");
-    [].forEach.call(extLinks, (a) => {
-        const link = a.getAttribute("href");
-        if (link.indexOf("http") === 0) {
-            a.setAttribute("target", "_blank");
-            a.setAttribute("rel", "noopener");
-        }
+    const langLinks = document.querySelectorAll(".c-lang a");
+    [].forEach.call(langLinks, (link) => {
+        link.addEventListener('click', () => {
+            window.localStorage.setItem('locale', link.getAttribute('href').substring(1));
+        });
     });
-
 });
