@@ -9,10 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.classList.toggle('mobile-nav-opened');
         });
     }
-    const langLinks = document.querySelectorAll(".c-lang a");
-    [].forEach.call(langLinks, (link) => {
-        link.addEventListener('click', () => {
-            window.localStorage.setItem('locale', link.getAttribute('href').substring(1));
-        });
-    });
+
+    const currentLang = document.querySelector('html').getAttribute('lang');
+    if (currentLang) {
+        window.localStorage.setItem('locale', currentLang);
+    }
 });
