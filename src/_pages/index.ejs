@@ -3,15 +3,15 @@ layout: default.ejs
 title: Radzima App
 ---
 <script>
-var locale = 'ru';
-var langs = <%- JSON.stringify(Object.keys(lang)) %>;
+let locale = 'ru';
+const langs = <%- JSON.stringify(Object.keys(lang)) %>;
 try {
-    var savedLocale = window.localStorage.getItem('locale');
-    if(savedLocale && langs.includes(savedLocale)){
+    const savedLocale = window.localStorage.getItem('locale');
+    if(savedLocale && langs.indexOf(savedLocale) !== -1){
         locale = savedLocale;
     } else {
-        var browserLocale = window.navigator && window.navigator.languages && window.navigator.languages[0];
-        if(browserLocale && langs.includes(browserLocale)) {
+        const browserLocale = window.navigator && window.navigator.languages && window.navigator.languages[0];
+        if(browserLocale && langs.indexOf(browserLocale) !== -1) {
             locale = browserLocale;
         }
     }
