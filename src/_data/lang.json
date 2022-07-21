@@ -1,12 +1,14 @@
 {
     "ru": {
         "sitemap": "Карта сайта",
+        "navigation": "Навигация",
         "download": "Скачать",
         "privacyPolicy": "Политика Конфиденциальности",
         "feedbackBtn": "Связаться с нами"
     },
     "en": {
         "sitemap": "Site map",
+        "navigation": "Navigation",
         "download": "Download",
         "privacyPolicy": "Privacy Policy",
         "feedbackBtn": "Connect Us"

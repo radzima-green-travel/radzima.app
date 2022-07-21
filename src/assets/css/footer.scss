@@ -21,11 +21,8 @@
 
     a {
         margin: 0 17px;
-        transition: opacity .3s;
 
-        &:hover {
-            opacity: 0.8;
-        }
+        @include hoverOpacity;
     }
 }
 .footer__links {
@@ -33,11 +30,8 @@
 
     a {
         text-decoration: none;
-        transition: opacity .3s;
 
-        &:hover {
-            opacity: 0.8;
-        }
+        @include hoverOpacity;
     }
 }
 
