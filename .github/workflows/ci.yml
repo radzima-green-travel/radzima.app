@@ -1,0 +1,44 @@
+name: CI/CD
+on:
+  push:
+    branches:
+      - main
+      - release/*
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache modules
+        uses: actions/cache@v1
+        id: yarn-cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - name: Install dependencies
+        run: yarn install
+      - name: Build
+        run: yarn run prod
+      - name: Deploy to development
+        if: ${{ startsWith(github.ref_name, 'release/') != true }}
+        run: aws s3 sync ./dist s3://${{ secrets.BUCKET_DEV }} --delete
+      - name: Invalidate cache
+        if: ${{ startsWith(github.ref_name, 'release/') != true }}
+        run: aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_DEV }} --paths '/*'
+      - name: Deploy to production
+        if: ${{ startsWith(github.ref_name, 'release/') }}
+        run: aws s3 sync ./dist s3://${{ secrets.BUCKET_PROD }} --delete
+      - name: Invalidate cache
+        if: ${{ startsWith(github.ref_name, 'release/') }}
+        run: aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_PROD }} --paths '/*'
