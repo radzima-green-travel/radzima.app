@@ -4,7 +4,72 @@ title: Главная
 ---
 
 <div class="container">
-    <h1>Путешествуйте и открывайте для себя Беларусь, которую раньше не знали</h1>
-    <p>Открой для себя национальные парки, исторические места и достопримечательности с приложением-путеводителем. Ищи экскурсии и маршруты в каталоге, и отправляйся в увлекательное путешествие. </p>
-    <p><a href="/sitemap"><%= lang[locale].sitemap %></a></p>
+    <div class="c-promo">
+        <div class="c-promo__body">
+            <h1>Путешествуйте и открывайте для себя Беларусь, которую раньше не знали</h1>
+            <p>Открой для себя национальные парки, исторические места и достопримечательности с приложением-путеводителем. Ищи экскурсии и маршруты в каталоге, и отправляйся в увлекательное путешествие.</p>
+            <div class="c-promo__btns">
+                <a href="<%= site.appGooglePlay %>" target="_blank" rel="noopener">
+                    <img alt="Get it on Google Play" src="/images/app-google-black.png" width="167" height="48">
+                </a>
+                <a href="<%= site.appAppleStore %>" target="_blank" rel="noopener">
+                    <img alt="Download on the App Store" src="/images/app-apple-black.png" width="166" height="48">
+                </a>
+            </div>
+        </div>
+        <div class="c-promo__img">
+            <img src="/images/promo.svg" alt="">
+        </div>
+    </div>
+    <h2 class="c-section-head">radzima в цифрах</h2>
+    <div class="c-stats">
+        <div class="c-stats__body">
+            <h3>
+                Карманный помощник&nbsp;<br>
+                для путешествий по Беларуси
+            </h3>
+            <p>Открой для себя национальные парки, исторические места и достопримечательности с приложением-путеводителем. </p>
+        </div>
+        <div class="c-stats__grid">
+            <div class="c-stats__grid-cell">
+                <div class="c-stats__grid-value">200 +</div>
+                <div class="c-stats__grid-label">активных пользователей</div>
+            </div>
+            <div class="c-stats__grid-cell">
+                <div class="c-stats__grid-value">5.0</div>
+                <div class="c-stats__grid-label">рейтинг на маркетах</div>
+            </div>
+            <div class="c-stats__grid-cell">
+                <div class="c-stats__grid-value">500 +</div>
+                <div class="c-stats__grid-label">локаций в каталоге</div>
+            </div>
+            <div class="c-stats__grid-cell">
+                <div class="c-stats__grid-value">136</div>
+                <div class="c-stats__grid-label">готовых маршрутов</div>
+            </div>
+        </div>
+    </div>
+    <h2 class="c-section-head">наши возможности </h2>
+    <div class="c-about">
+        <div class="c-about__item">
+            <div class="c-about__icon c-about__icon--search"></div>
+            <h3>Быстрый поиск на карте</h3>
+            <p>Ищи объекты по категориям прямо на карте</p>
+        </div>
+        <div class="c-about__item">
+            <div class="c-about__icon c-about__icon--loc"></div>
+            <h3>Cамое важное о локации</h3>
+            <p>Изучай новые места, историю и достопримечательности</p>
+        </div>
+        <div class="c-about__item">
+            <div class="c-about__icon c-about__icon--map"></div>
+            <h3>Маршруты и навигация</h3>
+            <p>Строй маршруты до понравившихся объектов</p>
+        </div>
+        <div class="c-about__item">
+            <div class="c-about__icon c-about__icon--fav"></div>
+            <h3>Избранное</h3>
+            <p>Планируй путешествие и создавай список любимых мест</p>
+        </div>
+    </div>
 </div>

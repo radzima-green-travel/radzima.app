@@ -23,3 +23,11 @@
     }
 }
 
+@mixin hoverOpacity {
+    transition: opacity .3s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+

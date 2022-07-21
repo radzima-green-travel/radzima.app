@@ -61,7 +61,7 @@
     @include Tablet {
         height: 40px;
         padding: 0 33px;
-        font-size: 12px;
+        font-size: toRem(12);
     }
     @include Mobile {
         height: 36px;
@@ -74,6 +74,19 @@
     border: 0;
     font: inherit;
     color: inherit;
+}
+
+.c-section-head {
+    margin: 20px 0;
+    font-size: toRem(14);
+    font-weight: 500;
+    color: #239F0F;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    @include Mobile {
+        font-size: toRem(13);
+    }
 }
 
 .c-sitemap-list {
