@@ -2,8 +2,12 @@
     <div class="container">
         <h2>Скачайте приложение и начните свое увлекательное путешествие по Беларуси </h2>
         <div class="c-download-banner__btns">
-            <a href="#"><img alt="Get it on Google Play" src="/images/app-google-white.png" width="167" height="48"></a>
-            <a href="#"><img alt="Download on the App Store" src="/images/app-apple-white.png" width="166" height="48"></a>
+            <a href="<%= site.appGooglePlay %>" target="_blank" rel="noopener">
+                <img alt="Get it on Google Play" src="/images/app-google-white.png" width="167" height="48">
+            </a>
+            <a href="<%= site.appAppleStore %>" target="_blank" rel="noopener">
+                <img alt="Download on the App Store" src="/images/app-apple-white.png" width="166" height="48">
+            </a>
         </div>
     </div>
 </div>
@@ -24,11 +28,15 @@
             &copy; 2022 Epam Systems, All rights reserved
         </div>
         <div class="footer__apps">
-            <a href="#"><img alt="Get it on Google Play" src="/images/app-google-black.png" width="134" height="40"></a>
-            <a href="#"><img alt="Download on the App Store" src="/images/app-apple-black.png" width="134" height="40"></a>
+            <a href="<%= site.appGooglePlay %>" target="_blank" rel="noopener">
+                <img alt="Get it on Google Play" src="/images/app-google-black.png" width="134" height="40">
+            </a>
+            <a href="<%= site.appAppleStore %>" target="_blank" rel="noopener">
+                <img alt="Download on the App Store" src="/images/app-apple-black.png" width="134" height="40">
+            </a>
         </div>
         <div class="footer__links">
-            <a href="#"><%= lang[locale].privacyPolicy %></a>
+            <a href="<%= site.privacyPolicy %>" target="_blank" rel="noopener"><%= lang[locale].privacyPolicy %></a>
         </div>
     </div>
 </footer>

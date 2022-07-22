@@ -3,9 +3,21 @@ layout: default.ejs
 title: Radzima App
 ---
 <script>
-var locale = 'en';
-if(window.navigator && window.navigator.languages && window.navigator.languages[0] && window.navigator.languages[0].indexOf('ru') === 0) {
-    locale = 'ru';
+let locale = 'ru';
+const langs = <%- JSON.stringify(Object.keys(lang)) %>;
+try {
+    const savedLocale = window.localStorage.getItem('locale');
+    if (savedLocale && langs.indexOf(savedLocale) !== -1) {
+        locale = savedLocale;
+    } else {
+        const browserLocale = window.navigator && window.navigator.languages && window.navigator.languages[0];
+        if (browserLocale && langs.indexOf(browserLocale) !== -1) {
+            locale = browserLocale;
+        }
+    }
+    window.localStorage.setItem('locale', locale);
+} catch (err) {
+    console.error(err);
 }
 window.location.replace('/'+locale);
 </script>

@@ -10,13 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    const extLinks = document.querySelectorAll("a");
-    [].forEach.call(extLinks, (a) => {
-        const link = a.getAttribute("href");
-        if (link.indexOf("http") === 0) {
-            a.setAttribute("target", "_blank");
-            a.setAttribute("rel", "noopener");
-        }
-    });
-
+    const currentLang = document.querySelector('html').getAttribute('lang');
+    if (currentLang) {
+        window.localStorage.setItem('locale', currentLang);
+    }
 });
