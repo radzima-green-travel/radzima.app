@@ -32,13 +32,13 @@ jobs:
         run: yarn run prod
       - name: Deploy to development
         if: ${{ startsWith(github.ref_name, 'release/') != true }}
-        run: aws s3 sync ./dist s3://${{ secrets.BUCKET_DEV }} --delete
+        run: aws s3 sync ./dist s3://${{ secrets.BUCKET_DEV }}
       - name: Invalidate cache
         if: ${{ startsWith(github.ref_name, 'release/') != true }}
         run: aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_DEV }} --paths '/*'
       - name: Deploy to production
         if: ${{ startsWith(github.ref_name, 'release/') }}
-        run: aws s3 sync ./dist s3://${{ secrets.BUCKET_PROD }} --delete
+        run: aws s3 sync ./dist s3://${{ secrets.BUCKET_PROD }}
       - name: Invalidate cache
         if: ${{ startsWith(github.ref_name, 'release/') }}
         run: aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_PROD } --paths '/*'
