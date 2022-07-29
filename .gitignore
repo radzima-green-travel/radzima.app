@@ -2,5 +2,25 @@
 /node_modules/
 /src/compiled-assets/
 
+__MACOSX/
 .DS_Store
 Thumbs.db
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+
+# Visual Studio Code
+#
+.vscode/
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
