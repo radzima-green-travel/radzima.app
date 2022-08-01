@@ -6,12 +6,8 @@ if (!sectionPromo[locale]) { locale = site.defaultLocale; }
         <h1><%= sectionPromo[locale].title %></h1>
         <p><%= sectionPromo[locale].text %></p>
         <div class="c-promo__btns">
-            <a href="<%= site.appGooglePlay %>" target="_blank" rel="noopener">
-                <img alt="<%= lang[locale].downloadGooglePlay %>" src="/images/app-google-play.svg" width="167" height="48">
-            </a>
-            <a href="<%= site.appAppleStore %>" target="_blank" rel="noopener">
-                <img alt="<%= lang[locale].downloadAppStore %>" src="/images/app-app-store.svg" width="166" height="48">
-            </a>
+            <%- include('/googleplay_badge') %>
+            <%- include('/appstore_badge') %>
         </div>
     </div>
     <div class="c-promo__img">
