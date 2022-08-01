@@ -1,0 +1,16 @@
+.c-googleplay-badge {
+  position: relative;
+  width: 124px;
+  height: 48px;
+}
+
+img.c-googleplay-badge__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 70px;
+  margin-left: -90px;
+  margin-top: -35px;
+  max-width: 180px;
+}

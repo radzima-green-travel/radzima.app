@@ -1,32 +1,38 @@
 {
     "ru": {
         "downloadText": "Скачайте приложение и начните свое увлекательное путешествие по Беларуси",
-        "downloadAppStore": "Скачать из App Store",
-        "downloadGooglePlay": "Скачать из Google Play",
         "feedbackBtn": "Связаться с нами",
         "footFeedbackTitle": "Помогите нам стать лучше",
         "footFeedbackBody": "<p>Расскажите нам о своем опыте работы с Radzima.</p><p>Ваше мнение сможет повлиять на развитие проекта.</p>",
         "navigation": "Навигация",
-        "privacyPolicy": "Политика Конфиденциальности"
+        "privacyPolicy": "Политика Конфиденциальности",
+        "appstoreImageName": "appstore_ru",
+        "googlePlayImageName": "googleplay_ru",
+        "appstoreImageAlt": "Скачать в AppStore",
+        "googlePlayImageAlt": "Получить в Google Play"
     },
     "en": {
         "downloadText": "Download the app and start your exciting journey around Belarus",
-        "downloadAppStore": "Download on the App Store",
-        "downloadGooglePlay": "Get it on Google Play",
-        "feedbackBtn": "Contact Us",
+        "feedbackBtn": "Connect Us",
         "footFeedbackTitle": "Help us to get better",
         "footFeedbackBody": "<p>Tell us about your experience with Radzima.</p><p>Your opinion can influence the development of the project.</p>",
         "navigation": "Navigation",
-        "privacyPolicy": "Privacy Policy"
+        "privacyPolicy": "Privacy Policy",
+        "appstoreImageName": "appstore_us",
+        "googlePlayImageName": "googleplay_us",
+        "appstoreImageAlt": "Download in AppStore",
+        "googlePlayImageAlt": "Get it on Google Play"
     },
     "zh": {
         "downloadText": "下載應用程式，開始您在白俄羅斯的激動人心的旅程",
-        "downloadAppStore": "在 AppStore 上下載",
-        "downloadGooglePlay": "在 Google Play 上獲取",
         "feedbackBtn": "聯繫我們",
         "footFeedbackTitle": "幫助我們變得更好",
         "footFeedbackBody": "<p>告訴我們您在Radzima的經歷。</p><p>您的意見可以影響項目的發展。</p>",
         "navigation": "導航",
-        "privacyPolicy": "隱私政策"
+        "privacyPolicy": "隱私政策",
+        "appstoreImageName": "appstore_cn",
+        "googlePlayImageName": "googleplay_cn",
+        "appstoreImageAlt": "在 AppStore 中下载",
+        "googlePlayImageAlt": "在 Google Play 上获取"
     }
 }

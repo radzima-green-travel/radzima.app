@@ -1,0 +1,15 @@
+<a href="<%= site.appAppleStore %>" target="_blank" rel="noopener">
+    <picture>
+        <source type="image/webp"
+                srcset="/images/badges/<%= lang[locale].appstoreImageName %>@1x.webp 1x,
+            /images/badges/<%= lang[locale].appstoreImageName %>@2x.webp 2x,
+            /images/badges/<%= lang[locale].appstoreImageName %>@3x.webp 3x">
+        <img srcset="/images/badges/<%= lang[locale].appstoreImageName %>@3x.png 3x,
+    /images/badges/<%= lang[locale].appstoreImageName %>@2x.png 2x,
+     /images/badges/<%= lang[locale].appstoreImageName %>@1x.png 1x"
+             alt="<%= lang[locale].appstoreImageAlt %>"
+             src="/images/badges/<%= lang[locale].appstoreImageName %>"
+             width="144"
+             height="48">
+    </picture>
+</a>
