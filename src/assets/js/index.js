@@ -14,4 +14,24 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentLang) {
         window.localStorage.setItem('locale', currentLang);
     }
+
+    const feedbackCarousel = document.querySelector('.c-feedbacks__items');
+    if (feedbackCarousel && typeof Swiper === 'function') {
+        new Swiper(feedbackCarousel, {
+            slidesPerView: 1,
+            spaceBetween: 21,
+            pagination: {
+              el: ".c-feedbacks__pagination",
+              dynamicBullets: true,
+            },
+            breakpoints: {
+                1024: {
+                  slidesPerView: 3,
+                },
+                744: {
+                  slidesPerView: 2,
+                },
+            },
+        });
+    }
 });

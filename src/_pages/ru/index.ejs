@@ -72,4 +72,31 @@ title: Главная
             <p>Планируй путешествие и создавай список любимых мест</p>
         </div>
     </div>
+
+    <div class="c-feedbacks">
+        <h2 class="c-section-head">о нас говорят</h2>
+        <div class="swiper c-feedbacks__items">
+            <div class="swiper-wrapper">
+                <% feedbacks.forEach((post) => { %>
+                    <div class="swiper-slide c-feedbacks__item">
+                        <div class="c-feedbacks__item-head">
+                            <div class="c-feedbacks__item-name">
+                                <%= post.author %>
+                            </div>
+                            <div class="c-feedbacks__item-source">
+                                <%= post.source %>
+                            </div>
+                            <div class="c-feedbacks__item-rate">
+                                <%= post.rate %>
+                            </div>
+                        </div>
+                        <div class="c-feedbacks__item-body">
+                            <%= post.body %>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+        <div class="c-feedbacks__pagination"></div>
+    </div>
 </div>
