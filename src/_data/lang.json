@@ -1,16 +1,20 @@
 {
     "ru": {
-        "sitemap": "Карта сайта",
         "navigation": "Навигация",
         "download": "Скачать",
         "privacyPolicy": "Политика Конфиденциальности",
-        "feedbackBtn": "Связаться с нами"
+        "downloadText": "Скачайте приложение и начните свое увлекательное путешествие по Беларуси",
+        "feedbackBtn": "Связаться с нами",
+        "footFeedbackTitle": "Помогите нам стать лучше",
+        "footFeedbackBody": "<p>Расскажите нам о своем опыте работы с Radzima.</p><p>Ваше мнение сможет повлиять на развитие проекта.</p>"
     },
     "en": {
-        "sitemap": "Site map",
         "navigation": "Navigation",
         "download": "Download",
         "privacyPolicy": "Privacy Policy",
-        "feedbackBtn": "Connect Us"
+        "downloadText": "Скачайте приложение и начните свое увлекательное путешествие по Беларуси",
+        "feedbackBtn": "Connect Us",
+        "footFeedbackTitle": "Помогите нам стать лучше",
+        "footFeedbackBody": "<p>Расскажите нам о своем опыте работы с Radzima.</p><p>Ваше мнение сможет повлиять на развитие проекта.</p>"
     }
 }
