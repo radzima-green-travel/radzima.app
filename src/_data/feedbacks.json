@@ -1,44 +1,186 @@
-[
-    {
-        "author": "Галина Знакомая",
-        "source": "google play",
-        "rate": "5.0",
-        "body": "Интересное приложение! Ничего не глючит, описания корректные, визуал приятный, разработчики молодцы!"
-    },
-    {
-        "author": "Aleh Zamzhytski",
-        "source": "google play",
-        "rate": "5.0",
-        "body": "Отличное приложение, даёт много идей для внутренних путешествий. Добавьте, пожалуйста, кнопку \"предложить место\", чтобы можно было расширять список мест за счёт других пользователей"
-    },
-    {
-        "author": "Alex A.",
-        "source": "google play",
-        "rate": "5.0",
-        "body": "Спасибо за приложение. Вы большие молодцы!"
-    },
-    {
-        "author": "Kamille",
-        "source": "google play",
-        "rate": "5.0",
-        "body": "Выглядит норм, удачи!"
-    },
-    {
-        "author": "Lucky Luciano",
-        "source": "google play",
-        "rate": "5.0",
-        "body": "Выдатная аплікацыя. Прапаную сябрам"
-    },
-    {
-        "author": "Павел Романов",
-        "source": "google play",
-        "rate": "5.0",
-        "body": "Отличное приложение!"
-    },
-    {
-        "author": "Артём Малахов",
-        "source": "google play",
-        "rate": "5.0",
-        "body": "Отличное приложение!"
-    }
-]
+{
+    "ru": [
+        {
+            "author": "nVizzz",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Ребята, нашей стране давно не хватает такого приложения. Всё супер, очень полезно! Предлагаю идею для развития: проработайте и добавьте раздел маршрутов для автомобильных экскурсий с расстановкой точек интереса и полезной информации по ним. Ещё помню в прошлом году были статьи на Онлайнере, где предлагались интересные места для посещения. Предлагаю их тоже нанести на карту. Можно было бы сделать это как слой данных на карте. А если запартнёриться с гидами/историками, то из этого приложения можно было бы вообще сделать отправную точку для путешествий по Беларуси. Не забрасывайте! И спасибо!"
+        },
+        {
+            "author": "ChaikovA",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Теперь хочется больше путешествовать по стране и увидеть вживую🤗 Рекомендую!"
+        },
+        {
+            "author": "asedhx",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Удобное приложение, можно проложить путь в своём любимом навигаторе! Рекомендую"
+        },
+        {
+            "author": "KramskoyA",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Отличная работа, спасибо за пешие маршруты👍🏻"
+        },
+        {
+            "author": "Julia Lion",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Приложение очень удобное и с красивым контентом. Виды так заманчиво влекут за собой) Предложения относительно потенциальных улучшений: ~ Без интернета маршрут не строится… и, скажем, в лесу или заповеднике каком это может стать проблемой; ~ как вариант, можно ещё сделать сортировку мест по областям, чтобы была возможность не по карте искать точки, а, к примеру, нажать кнопку «гродненская область» и смотреть по списку что там можно глянуть; ~ после этого мне пришла ещё одна идея… можно после определения геолокации юзера сразу же предлагать ему варианты «поблизости»; ~ ну и, наверно, самая трудноосуществимая опция: рейтинг мест. Спасибо)"
+        },
+        {
+            "author": "alexey komov",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Хорошо иметь такой контент в одном месте. Планируете ли вы добавить больше языков и, возможно, покупки экскурсий в приложении?"
+        },
+        {
+            "author": "Tr3v3ro4eg",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Супер! Открыл страну с новой стороны )"
+        },
+        {
+            "author": "mich dreby",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Одно из лучших приложений в мире от действительно топовых разработчиков!"
+        },
+        {
+            "author": "Alex A.",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Спасибо за приложение! Вы большие молодцы!"
+        },
+        {
+            "author": "Aleh Zamzhytski",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Отличное приложение. Дает много идей для внутренних путешествий. Добавьте, пожалуйста, кнопку \"предложить место\", чтобы можно было расширять список мест за счет других пользователей"
+        },
+        {
+            "author": "Lucky Luciano",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Выдатная аплiкацыя. Прапаную сябрам"
+        },
+        {
+            "author": "Артем Малахов",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Отличное приложение!"
+        },
+        {
+            "author": "Kamille",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Выглядит норм, удачи!"
+        },
+        {
+            "author": "Галина Знакомая",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Интересное приложение! Ничего не глючит, описания корректные, визуал приятный, разработчики молодцы!"
+        },
+        {
+            "author": "Павел Романов",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Отлисное приложение!"
+        }
+    ],
+    "en": [
+        {
+            "author": "nVizzz",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Folks, our country doesn't have such an application- for a long time. Everything is great, very helpful! I propose an idea for development: work out and add a section of routes for car excursions with pointed places of interest and useful information on them. I also remember last year there were articles on the Onliner that suggested interesting places to visit. I offer putting them on the map too. One could do this as a data layer on a map. And if you are able to become a partner with guides and historians, then this application can become a starting point for traveling around Belarus. Don't drop it! And thanks"
+        },
+        {
+            "author": "ChaikovA",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Now I want to travel more around the country and see it live🤗 I recommend it!"
+        },
+        {
+            "author": "asedhx",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Convenient application. You can set a route in your favorite navigator! I recommend"
+        },
+        {
+            "author": "KramskoyA",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Great job, thanks for the walking routes👍🏻"
+        },
+        {
+            "author": "Julia Lion",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "The application is very convenient to use. The views are so tempting) Suggestions for possible improvements: ~ Without the Internet, the route can't be set ... and, say, in a forest or a reserve, which can be a problem; ~ as an option, you can sort places by region so that you don't need to search for points on the map, but, for example, tap the \"Grodno region\"  and see a list of places you can see there; ~ after that, another idea came to my mind ... after determining the geolocation of the user, you can immediately offer him options “nearby”; ~ well, and probably the most difficult option: the rating of places. Thank you)"
+        },
+        {
+            "author": "alexey komov",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "It’s good to have such content in one place. Do you plan to add more languages and maybe in-app purchases of excursions?"
+        },
+        {
+            "author": "Tr3v3ro4eg",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "Super! I opened the country from a new side)"
+        },
+        {
+            "author": "mich dreby",
+            "source": "app store",
+            "rate": "5.0",
+            "body": "One of the best apps in the world from really senior developers!"
+        },
+        {
+            "author": "Alex A.",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Thanks for the app. You are great fellows !"
+        },
+        {
+            "author": "Aleh Zamzhytski",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Cool app! It gives lots of ideas for travelling withing the country. Please, add the buttom \"Recommend the place\" for sharing the list of places to visit by other users"
+        },
+        {
+            "author": "Lucky Luciano",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Nice application. Recommend ro my friends"
+        },
+        {
+            "author": "Артем Малахов",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Cool app!"
+        },
+        {
+            "author": "Kamille",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "It looks ok. Have a good luck"
+        },
+        {
+            "author": "Галина Знакомая",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Interesting app. Nothing fails, correct descriptions, pleasant visual, developers are great!"
+        },
+        {
+            "author": "Павел Романов",
+            "source": "google play",
+            "rate": "5.0",
+            "body": "Cool app!"
+        }
+    ]
+}

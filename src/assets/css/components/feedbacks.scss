@@ -58,11 +58,23 @@
     }
 }
 .c-feedbacks__item-body {
-    min-height: 160px;
+    position: relative;
+    height: 160px;
     padding: 18px;
     font-size: toRem(15);
     line-height: 1.6;
     color: #797982;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 20px;
+        background: linear-gradient(rgba(#fff, 0), #fff);
+        border-radius: 0 0 8px 8px;
+    }
 
     @include Mobile {
         min-height: 130px;
