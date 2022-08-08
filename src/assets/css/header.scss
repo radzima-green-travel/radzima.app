@@ -19,9 +19,6 @@
     margin-right: auto;
     background: url(../images/logo.svg) 50% / cover no-repeat;
 }
-.header__btn {
-    margin-left: 75px;
-}
 .header__nav-btn {
     position: relative;
     width: 36px;
@@ -72,15 +69,6 @@
             }
         }
     }
-    .header__btn {
-        display: block;
-        margin-left: 0;
-
-        .btn-primary {
-            display: block;
-            width: 100%;
-        }
-    }
 }
 
 .mobile-nav-opened {
@@ -113,9 +101,6 @@
         width: 147px;
         height: 40px;
     }
-    .header__btn {
-        margin-left: 27px;
-    }
 }
 
 @include Mobile {
@@ -127,8 +112,7 @@
             padding-bottom: 17px;
         }
     }
-    .header__lang,
-    .header__btn {
+    .header__lang {
         display: none;
     }
     .header__logo {
