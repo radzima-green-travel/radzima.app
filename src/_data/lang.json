@@ -2,6 +2,8 @@
     "ru": {
         "navigation": "Навигация",
         "download": "Скачать",
+        "downloadAppStore": "Скачать из App Store",
+        "downloadGooglePlay": "Скачать из Google Play",
         "privacyPolicy": "Политика Конфиденциальности",
         "downloadText": "Скачайте приложение и начните свое увлекательное путешествие по Беларуси",
         "feedbackBtn": "Связаться с нами",
@@ -11,6 +13,8 @@
     "en": {
         "navigation": "Navigation",
         "download": "Download",
+        "downloadAppStore": "Download on the App Store",
+        "downloadGooglePlay": "Get it on Google Play",
         "privacyPolicy": "Privacy Policy",
         "downloadText": "Download the app and start your exciting journey around Belarus",
         "feedbackBtn": "Contact Us",
