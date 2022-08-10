@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
 
   // Copy src/compiled-assets to /assets
   eleventyConfig.addPassthroughCopy({ 'src/compiled-assets': 'assets' });
+  eleventyConfig.addPassthroughCopy({ 'src/assets/vendor/swiper-bundle.min.js': 'assets/swiper.min.js' });
   // Copy all
   eleventyConfig.addPassthroughCopy('src/images');
 
