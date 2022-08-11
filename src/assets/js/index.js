@@ -21,8 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
             slidesPerView: 1,
             spaceBetween: 21,
             pagination: {
-              el: ".c-feedbacks__pagination",
+              el: '.c-feedbacks__pagination',
               dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.c-feedbacks__next',
+                prevEl: '.c-feedbacks__prev',
             },
             breakpoints: {
                 1024: {

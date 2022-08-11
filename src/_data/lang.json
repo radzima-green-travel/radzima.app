@@ -4,6 +4,10 @@
         "navigation": "Навигация",
         "download": "Скачать",
         "privacyPolicy": "Политика Конфиденциальности",
+        "feedbacksPrev": "К предыдущим отзывам",
+        "feedbacksNext": "К следующим отзывам",
+        "publishedAt": "Опубликовано в",
+        "rate": "Оценка",
         "feedbackBtn": "Связаться с нами"
     },
     "en": {
@@ -11,6 +15,10 @@
         "navigation": "Navigation",
         "download": "Download",
         "privacyPolicy": "Privacy Policy",
+        "feedbacksPrev": "To previous feedbacks",
+        "feedbacksNext": "To next feedbacks",
+        "publishedAt": "Posted on",
+        "rate": "Rate",
         "feedbackBtn": "Connect Us"
     }
 }
