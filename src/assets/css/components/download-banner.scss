@@ -1,7 +1,7 @@
 .c-download-banner {
     padding: 72px 0 64px;
-    background: #239F0F;
-    color: #fff;
+    background: #e9f6e7;
+    color: #292F2C;
     
     .container {
         display: flex;
@@ -44,7 +44,9 @@
 @include Mobile {
     .c-download-banner {
         padding: 90px 0 50px;
-        background: #239F0F url(../../images/bg-curve-grn.svg) 50% 20px no-repeat;
+        background-image: url(../../images/bg-curve-grn.svg);
+        background-position: 50% 20px;
+        background-repeat: no-repeat;
         background-size: contain;
 
         .container {

@@ -1,19 +1,19 @@
 ---
 layout: default.ejs
-title: Главная
+title: Radzima.app
 ---
 
 <div class="container">
     <div class="c-promo">
         <div class="c-promo__body">
-            <h1>Путешествуйте и открывайте для себя Беларусь, которую раньше не знали</h1>
-            <p>Открой для себя национальные парки, исторические места и достопримечательности с приложением-путеводителем. Ищи экскурсии и маршруты в каталоге, и отправляйся в увлекательное путешествие.</p>
+            <h1>Путешествуй. Исследуй. Лови момент. Открой новую неизведанную Беларусь</h1>
+            <p>Потрясающие места, уникальная природа, достопримечательности и экскурсии, необычные маршруты - выбирай свое и отправляйся навстречу новым впечатлениям.</p>
             <div class="c-promo__btns">
                 <a href="<%= site.appGooglePlay %>" target="_blank" rel="noopener">
-                    <img alt="Get it on Google Play" src="/images/app-google-black.png" width="167" height="48">
+                    <img alt="<%= lang[locale].downloadGooglePlay %>" src="/images/app-google-play.svg" width="167" height="48">
                 </a>
                 <a href="<%= site.appAppleStore %>" target="_blank" rel="noopener">
-                    <img alt="Download on the App Store" src="/images/app-apple-black.png" width="166" height="48">
+                    <img alt="<%= lang[locale].downloadAppStore %>" src="/images/app-app-store.svg" width="166" height="48">
                 </a>
             </div>
         </div>
@@ -21,14 +21,15 @@ title: Главная
             <img src="/images/promo.svg" alt="">
         </div>
     </div>
+
     <h2 class="c-section-head">radzima в цифрах</h2>
     <div class="c-stats">
         <div class="c-stats__body">
             <h3>
-                Карманный помощник&nbsp;<br>
-                для путешествий по Беларуси
+                Карманный помощник для&nbsp;<br>
+                путешествий по Беларуси
             </h3>
-            <p>Открой для себя национальные парки, исторические места и достопримечательности с приложением-путеводителем. </p>
+            <p>Открой для себя национальные парки, исторические места и достопримечательности с приложением-путеводителем.</p>
         </div>
         <div class="c-stats__grid">
             <div class="c-stats__grid-cell">
