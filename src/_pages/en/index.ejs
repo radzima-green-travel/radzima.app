@@ -72,4 +72,47 @@ title: Radzima.app
             <p>Plan your trip and create lists of your favorite places</p>
         </div>
     </div>
+    
+    <div class="c-feedbacks">
+        <h2 class="c-section-head">о нас говорят</h2>
+        <div class="c-feedbacks__nav">
+            <button class="c-feedbacks__prev" aria-label="<%= lang[locale].feedbacksPrev %>"></button>
+            <button class="c-feedbacks__next" aria-label="<%= lang[locale].feedbacksNext %>"></button>
+        </div>
+        <div class="swiper c-feedbacks__items">
+            <div class="swiper-wrapper">
+                <% feedbacks[locale].forEach((post) => { %>
+                    <div class="swiper-slide c-feedbacks__item">
+                        <div class="c-feedbacks__item-head">
+                            <div class="c-feedbacks__item-userpic">
+                                <img src="https://eu.ui-avatars.com/api/?background=random&name=<%= post.author %>&size=48">
+                            </div>
+                            <div class="c-feedbacks__item-name">
+                                <%= post.author %>
+                            </div>
+                            <div
+                                class="c-feedbacks__item-rate"
+                                style="width: <%= Number(post.rate)*22 %>px;"
+                                aria-label="<%= lang[locale].rate %> <%= post.rate %>"
+                                >
+                            </div>
+                        </div>
+                        <div class="c-feedbacks__item-body">
+                            <%= post.body %>
+                        </div>
+                        <div class="c-feedbacks__item-source">
+                            <% if(post.source === 'app store'){ %>
+                                <div class="c-feedbacks__from-apple" aria-label="<%= lang[locale].publishedAt %> Apple App Store"></div>
+                            <% } %>
+                            <% if(post.source === 'google play'){ %>
+                                <div class="c-feedbacks__from-google" aria-label="<%= lang[locale].publishedAt %> Google Play Store"></div>
+                            <% } %>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+        <div class="c-feedbacks__pagination"></div>
+    </div>
+
 </div>

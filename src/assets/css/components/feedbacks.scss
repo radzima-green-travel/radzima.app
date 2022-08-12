@@ -1,0 +1,140 @@
+.c-feedbacks {
+    position: relative;
+    padding: 20px 0;
+
+    @include Tablet {
+        padding-top: 0;
+    }
+    @include Mobile {
+        padding-bottom: 10px;
+    }
+}
+.c-feedbacks__items {
+    display: flex;
+    margin: 40px 0 0;
+
+    @include Mobile {
+        margin-top: 30px;
+    }
+}
+.c-feedbacks__item {
+    background: #fff;
+    border: 1px solid rgba(235, 235, 245, 0.7);
+    box-shadow: 0px 0px 20px rgba(217, 217, 217, 0.25);
+    border-radius: 8px;
+    padding: 23px 23px 18px;
+    color: #1E1F20;
+}
+.c-feedbacks__item-head {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 63px;
+}
+.c-feedbacks__item-userpic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url(../../images/userpic.png) 50% / contain no-repeat;
+
+    img {
+        display: block;
+        min-width: 48px;
+        min-height: 48px;
+    }
+}
+.c-feedbacks__item-name {
+    margin-bottom: 8px;
+    font-size: toRem(14);
+    font-weight: 500;
+}
+.c-feedbacks__item-source {
+    font-size: toRem(10);
+    color: #797982;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.c-feedbacks__item-rate {
+    width: 106px;
+    height: 18px;
+    background: url(../../images/stars.svg) no-repeat;
+}
+.c-feedbacks__item-body {
+    position: relative;
+    height: calc(15px * 1.6 * 3);
+    margin-bottom: 18px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    font-size: toRem(15);
+    line-height: 1.6;
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    
+    @include Mobile {
+        height: calc(13px * 1.6 * 3);
+        font-size: toRem(13);
+    }
+}
+.c-feedbacks__pagination {
+    margin: 30px auto;
+
+    .swiper-pagination-bullet-active {
+        background: #4BA83B;
+    }
+}
+.c-feedbacks__nav {
+    position: absolute;
+    top: 38px;
+    right: 0;
+    display: flex;
+
+    @include Tablet {
+        top: 0;
+    }
+    @include Mobile {
+        display: none;
+    }
+}
+.c-feedbacks__next,
+.c-feedbacks__prev {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    background: #F9F9F9;
+    border: 0;
+    border-radius: 4px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: url(../../images/icon-chevron.svg) 50% no-repeat;
+    }
+
+    &.swiper-button-disabled::before {
+        opacity: 0.5;
+    }
+}
+.c-feedbacks__prev {
+    &::before {
+        transform: rotate(180deg);
+    }
+}
+.c-feedbacks__from-apple {
+    display: inline-block;
+    width: 153px;
+    height: 31px;
+    background: url(../../images/from-apple.svg) no-repeat;
+}
+.c-feedbacks__from-google {
+    display: inline-block;
+    width: 161px;
+    height: 31px;
+    background: url(../../images/from-google.svg) no-repeat;
+}

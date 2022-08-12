@@ -2,7 +2,7 @@
 .footer {
     padding: 20px 0 10px;
     background: #1E1F20;
-    font-size: 16px;
+    font-size: toRem(16);
     color: #fff;
 
     .container {
@@ -38,7 +38,7 @@
 @include Tablet {
     .footer {
         padding-bottom: 20px;
-        font-size: 14px;
+        font-size: toRem(14);
     
         .container {
             flex-direction: column-reverse;
@@ -59,6 +59,6 @@
 
 @include Mobile {
     .footer {
-        font-size: 12px;
+        font-size: toRem(12);
     }
 }
