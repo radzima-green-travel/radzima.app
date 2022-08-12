@@ -1,12 +1,109 @@
 ---
 layout: default.ejs
-title: Home page
+title: Radzima.app
 ---
 
 <div class="container">
-    <h1>Travel and discover Belarus you didn't know before</h1>
-    <p>Discover national parks, historical sites and attractions with the guide app. Look for excursions and routes in the catalog, and go on an exciting journey.</p>
-    
+    <div class="c-promo">
+        <div class="c-promo__body">
+            <h1>Travel. Explore. Seize the moment. Discover new unknown Belarus.</h1>
+            <p>Stunning places, unique nature, sightings and excursions, unusual routes - choose whatever you want and go towards new impressions.</p>
+            <div class="c-promo__btns">
+                <a href="<%= site.appGooglePlay %>" target="_blank" rel="noopener">
+                    <img alt="<%= lang[locale].downloadGooglePlay %>" src="/images/app-google-play.svg" width="167" height="48">
+                </a>
+                <a href="<%= site.appAppleStore %>" target="_blank" rel="noopener">
+                    <img alt="<%= lang[locale].downloadAppStore %>" src="/images/app-app-store.svg" width="166" height="48">
+                </a>
+            </div>
+        </div>
+        <div class="c-promo__img">
+            <img src="/images/promo.svg" alt="">
+        </div>
+    </div>
+    <h2 class="c-section-head">radzima in numbers</h2>
+    <div class="c-stats">
+        <div class="c-stats__body">
+            <h3>Pocket assistant for travel in Belarus</h3>
+            <p>Discover national parks, historical places and sightings with the guide app.</p>
+        </div>
+        <div class="c-stats__grid">
+            <div class="c-stats__grid-cell">
+                <div class="c-stats__grid-value">200 +</div>
+                <div class="c-stats__grid-label">active users</div>
+            </div>
+            <div class="c-stats__grid-cell">
+                <div class="c-stats__grid-value">5.0</div>
+                <div class="c-stats__grid-label">rating on markets</div>
+            </div>
+            <div class="c-stats__grid-cell">
+                <div class="c-stats__grid-value">500 +</div>
+                <div class="c-stats__grid-label">locations in the catalogue</div>
+            </div>
+            <div class="c-stats__grid-cell">
+                <div class="c-stats__grid-value">136</div>
+                <div class="c-stats__grid-label">ready to go routes</div>
+            </div>
+        </div>
+    </div>
+    <h2 class="c-section-head">как работает приложение</h2>
+    <div class="c-app">
+      <div class="c-app__desktop-img">
+        <img id="screenshot-app"src="/images/screenshot-app-1.png" alt="screenshot-app">
+      </div>
+      <div class="swiper c-app__imgs u-hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide c-app__img">
+            <img id="screenshot-app-1" src="/images/screenshot-app-1.png" alt="screenshot-app-1">
+          </div>
+          <div class="swiper-slide c-app__img">
+            <img id="screenshot-app-2" src="/images/screenshot-app-2.png" alt="screenshot-app-2">
+          </div>
+          <div class="swiper-slide c-app__img">
+            <img id="screenshot-app-3" src="/images/screenshot-app-3.png" alt="screenshot-app-3">
+          </div>
+        </div>
+        <div class="c-app__pagination"></div>
+      </div>
+      <div class="c-app__grid">
+        <div class="c-app__grid-cell c-app__grid-cell__selected" id="description-screenshot-app-1">
+          <h3>Выбирай интересные локации</h3>
+          <p>Заповедные территории, памятники и музеи, культурные объекты и места отдыха - более 500 уникальных локаций.</p>
+        </div>
+        <div class="c-app__grid-cell" id="description-screenshot-app-2">
+          <h3>Строй маршрут</h3>
+          <p>Большой выбор необычных маршрутов с подробным описанием объектов и путей следования.</p>
+        </div>
+        <div class="c-app__grid-cell" id="description-screenshot-app-3">
+          <h3>Наслаждайся путешествием</h3>
+          <p>Приглашай друзей, делись своими уникальными находками и отправляйся в новое увлекательное путешествие.</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="c-section-head">Our opportunities</h2>
+    <div class="c-about">
+        <div class="c-about__item">
+            <div class="c-about__icon c-about__icon--search"></div>
+            <h3>Quick search on the map</h3>
+            <p>Search objects by category directly on the map</p>
+        </div>
+        <div class="c-about__item">
+            <div class="c-about__icon c-about__icon--loc"></div>
+            <h3>The most important about the location</h3>
+            <p>Explore new places, history and sightseeing</p>
+        </div>
+        <div class="c-about__item">
+            <div class="c-about__icon c-about__icon--map"></div>
+            <h3>Routes and navigation</h3>
+            <p>Set routes to your favorite places and objects</p>
+        </div>
+        <div class="c-about__item">
+            <div class="c-about__icon c-about__icon--fav"></div>
+            <h3>Favorites</h3>
+            <p>Plan your trip and create lists of your favorite places</p>
+        </div>
+    </div>
+
     <div class="c-feedbacks">
         <h2 class="c-section-head">о нас говорят</h2>
         <div class="c-feedbacks__nav">
@@ -48,6 +145,4 @@ title: Home page
         </div>
         <div class="c-feedbacks__pagination"></div>
     </div>
-
-    <p><a href="/sitemap"><%= lang[locale].sitemap %></a></p>
 </div>

@@ -1,24 +1,32 @@
 {
     "ru": {
-        "sitemap": "Карта сайта",
-        "navigation": "Навигация",
         "download": "Скачать",
-        "privacyPolicy": "Политика Конфиденциальности",
+        "downloadText": "Скачайте приложение и начните свое увлекательное путешествие по Беларуси",
+        "downloadAppStore": "Скачать из App Store",
+        "downloadGooglePlay": "Скачать из Google Play",
         "feedbacksPrev": "К предыдущим отзывам",
         "feedbacksNext": "К следующим отзывам",
+        "feedbackBtn": "Связаться с нами",
+        "footFeedbackTitle": "Помогите нам стать лучше",
+        "footFeedbackBody": "<p>Расскажите нам о своем опыте работы с Radzima.</p><p>Ваше мнение сможет повлиять на развитие проекта.</p>",
+        "navigation": "Навигация",
+        "privacyPolicy": "Политика Конфиденциальности",
         "publishedAt": "Опубликовано в",
-        "rate": "Оценка",
-        "feedbackBtn": "Связаться с нами"
+        "rate": "Оценка"
     },
     "en": {
-        "sitemap": "Site map",
-        "navigation": "Navigation",
         "download": "Download",
-        "privacyPolicy": "Privacy Policy",
+        "downloadText": "Download the app and start your exciting journey around Belarus",
+        "downloadAppStore": "Download on the App Store",
+        "downloadGooglePlay": "Get it on Google Play",
         "feedbacksPrev": "To previous feedbacks",
         "feedbacksNext": "To next feedbacks",
+        "feedbackBtn": "Contact Us",
+        "footFeedbackTitle": "Help us to get better",
+        "footFeedbackBody": "<p>Tell us about your experience with Radzima.</p><p>Your opinion can influence the development of the project.</p>",
+        "navigation": "Navigation",
+        "privacyPolicy": "Privacy Policy",
         "publishedAt": "Posted on",
-        "rate": "Rate",
-        "feedbackBtn": "Connect Us"
+        "rate": "Rate"
     }
 }

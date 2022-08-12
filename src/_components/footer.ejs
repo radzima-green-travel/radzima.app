@@ -1,12 +1,12 @@
 <div class="c-download-banner">
     <div class="container">
-        <h2>Скачайте приложение и начните свое увлекательное путешествие по Беларуси </h2>
+        <h2><%= lang[locale].downloadText %></h2>
         <div class="c-download-banner__btns">
             <a href="<%= site.appGooglePlay %>" target="_blank" rel="noopener">
-                <img alt="Get it on Google Play" src="/images/app-google-white.png" width="167" height="48">
+                <img alt="<%= lang[locale].downloadGooglePlay %>" src="/images/app-google-play.svg" width="167" height="48">
             </a>
             <a href="<%= site.appAppleStore %>" target="_blank" rel="noopener">
-                <img alt="Download on the App Store" src="/images/app-apple-white.png" width="166" height="48">
+                <img alt="<%= lang[locale].downloadAppStore %>" src="/images/app-app-store.svg" width="166" height="48">
             </a>
         </div>
     </div>
@@ -14,9 +14,8 @@
 
 <div class="c-feedback">
     <div class="container">
-        <h2>Мы становимся лучше благодаря вам</h2>
-        <p>Расскажите нам о своем опыте работы с Radzima.</p>
-        <p>Пожалуйста, поделитесь отзывом, помогите нам стать сильнее и лучше</p>
+        <h2><%= lang[locale].footFeedbackTitle %></h2>
+        <%- lang[locale].footFeedbackBody %>
         <button type="button" class="btn-primary">
             <%= lang[locale].feedbackBtn %>
         </button>
@@ -29,10 +28,10 @@
         </div>
         <div class="footer__apps">
             <a href="<%= site.appGooglePlay %>" target="_blank" rel="noopener">
-                <img alt="Get it on Google Play" src="/images/app-google-black.png" width="134" height="40">
+                <img alt="<%= lang[locale].downloadGooglePlay %>" src="/images/app-google-play.svg" width="139.16" height="40">
             </a>
             <a href="<%= site.appAppleStore %>" target="_blank" rel="noopener">
-                <img alt="Download on the App Store" src="/images/app-apple-black.png" width="134" height="40">
+                <img alt="<%= lang[locale].downloadAppStore %>" src="/images/app-app-store.svg" width="138.33" height="40">
             </a>
         </div>
         <div class="footer__links">
