@@ -1,0 +1,20 @@
+{
+    "ru": {
+        "sectionTitle": "radzima в цифрах",
+        "title": "Карманный помощник для&nbsp;<br>путешествий по Беларуси",
+        "text": "Открой для себя национальные парки, исторические места и достопримечательности с приложением-путеводителем.",
+        "cellUsers":   "активных пользователей",
+        "cellRate":    "рейтинг на маркетах",
+        "cellObjects": "локаций в каталоге",
+        "cellRoutes":  "готовых маршрутов"
+    },
+    "en": {
+        "sectionTitle": "radzima in numbers",
+        "title": "Pocket assistant for travel in Belarus",
+        "text": "Discover national parks, historical places and sightings with the guide app.",
+        "cellUsers":   "active users",
+        "cellRate":    "rating on markets",
+        "cellObjects": "locations in the catalogue",
+        "cellRoutes":  "ready to go routes"
+    }
+}

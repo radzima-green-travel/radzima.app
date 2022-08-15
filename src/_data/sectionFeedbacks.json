@@ -1,0 +1,12 @@
+{
+    "ru": {
+        "sectionTitle": "о нас говорят",
+        "publishedAt": "Опубликовано в",
+        "rate": "Оценка"
+    },
+    "en": {
+        "sectionTitle": "About us",
+        "publishedAt": "Posted on",
+        "rate": "Rate"
+    }
+}
