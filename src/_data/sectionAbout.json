@@ -1,0 +1,52 @@
+{
+    "ru": {
+        "sectionTitle": "наши возможности",
+        "cols": [
+            {
+                "icon": "search",
+                "head": "Быстрый поиск на карте",
+                "body": "Ищи объекты по категориям прямо на карте"
+            },
+            {
+                "icon": "loc",
+                "head": "Cамое важное о локации",
+                "body": "Изучай новые места, историю и достопримечательности"
+            },
+            {
+                "icon": "map",
+                "head": "Маршруты и навигация",
+                "body": "Строй маршруты до понравившихся объектов"
+            },
+            {
+                "icon": "fav",
+                "head": "Избранное",
+                "body": "Планируй путешествие и создавай список любимых мест"
+            }
+        ]
+    },
+    "en": {
+        "sectionTitle": "Our opportunities",
+        "cols": [
+            {
+                "icon": "search",
+                "head": "Quick search on the map",
+                "body": "Search objects by category directly on the map"
+            },
+            {
+                "icon": "loc",
+                "head": "The most important about the location",
+                "body": "Explore new places, history and sightseeing"
+            },
+            {
+                "icon": "map",
+                "head": "Routes and navigation",
+                "body": "Set routes to your favorite places and objects"
+            },
+            {
+                "icon": "fav",
+                "head": "Favorites",
+                "body": "Plan your trip and create lists of your favorite places"
+            }
+        ]
+    }
+}

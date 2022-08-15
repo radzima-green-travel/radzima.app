@@ -4,48 +4,10 @@ title: Radzima.app
 ---
 
 <div class="container">
-    <div class="c-promo">
-        <div class="c-promo__body">
-            <h1>Travel. Explore. Seize the moment. Discover new unknown Belarus.</h1>
-            <p>Stunning places, unique nature, sightings and excursions, unusual routes - choose whatever you want and go towards new impressions.</p>
-            <div class="c-promo__btns">
-                <a href="<%= site.appGooglePlay %>" target="_blank" rel="noopener">
-                    <img alt="<%= lang[locale].downloadGooglePlay %>" src="/images/app-google-play.svg" width="167" height="48">
-                </a>
-                <a href="<%= site.appAppleStore %>" target="_blank" rel="noopener">
-                    <img alt="<%= lang[locale].downloadAppStore %>" src="/images/app-app-store.svg" width="166" height="48">
-                </a>
-            </div>
-        </div>
-        <div class="c-promo__img">
-            <img src="/images/promo.svg" alt="">
-        </div>
-    </div>
-    <h2 class="c-section-head">radzima in numbers</h2>
-    <div class="c-stats">
-        <div class="c-stats__body">
-            <h3>Pocket assistant for travel in Belarus</h3>
-            <p>Discover national parks, historical places and sightings with the guide app.</p>
-        </div>
-        <div class="c-stats__grid">
-            <div class="c-stats__grid-cell">
-                <div class="c-stats__grid-value">200 +</div>
-                <div class="c-stats__grid-label">active users</div>
-            </div>
-            <div class="c-stats__grid-cell">
-                <div class="c-stats__grid-value">5.0</div>
-                <div class="c-stats__grid-label">rating on markets</div>
-            </div>
-            <div class="c-stats__grid-cell">
-                <div class="c-stats__grid-value">500 +</div>
-                <div class="c-stats__grid-label">locations in the catalogue</div>
-            </div>
-            <div class="c-stats__grid-cell">
-                <div class="c-stats__grid-value">136</div>
-                <div class="c-stats__grid-label">ready to go routes</div>
-            </div>
-        </div>
-    </div>
+    <%- include('/sectionPromo') %>
+
+    <%- include('/sectionStats') %>
+
     <h2 class="c-section-head">как работает приложение</h2>
     <div class="c-app">
       <div class="c-app__desktop-img">
@@ -80,69 +42,9 @@ title: Radzima.app
         </div>
       </div>
     </div>
-    <h2 class="c-section-head">Our opportunities</h2>
-    <div class="c-about">
-        <div class="c-about__item">
-            <div class="c-about__icon c-about__icon--search"></div>
-            <h3>Quick search on the map</h3>
-            <p>Search objects by category directly on the map</p>
-        </div>
-        <div class="c-about__item">
-            <div class="c-about__icon c-about__icon--loc"></div>
-            <h3>The most important about the location</h3>
-            <p>Explore new places, history and sightseeing</p>
-        </div>
-        <div class="c-about__item">
-            <div class="c-about__icon c-about__icon--map"></div>
-            <h3>Routes and navigation</h3>
-            <p>Set routes to your favorite places and objects</p>
-        </div>
-        <div class="c-about__item">
-            <div class="c-about__icon c-about__icon--fav"></div>
-            <h3>Favorites</h3>
-            <p>Plan your trip and create lists of your favorite places</p>
-        </div>
-    </div>
 
-    <div class="c-feedbacks">
-        <h2 class="c-section-head">о нас говорят</h2>
-        <div class="c-feedbacks__nav">
-            <button class="c-feedbacks__prev" aria-label="<%= lang[locale].feedbacksPrev %>"></button>
-            <button class="c-feedbacks__next" aria-label="<%= lang[locale].feedbacksNext %>"></button>
-        </div>
-        <div class="swiper c-feedbacks__items">
-            <div class="swiper-wrapper">
-                <% feedbacks[locale].forEach((post) => { %>
-                    <div class="swiper-slide c-feedbacks__item">
-                        <div class="c-feedbacks__item-head">
-                            <div class="c-feedbacks__item-userpic">
-                                <img src="https://eu.ui-avatars.com/api/?background=random&name=<%= post.author %>&size=48">
-                            </div>
-                            <div class="c-feedbacks__item-name">
-                                <%= post.author %>
-                            </div>
-                            <div
-                                class="c-feedbacks__item-rate"
-                                style="width: <%= Number(post.rate)*22 %>px;"
-                                aria-label="<%= lang[locale].rate %> <%= post.rate %>"
-                                >
-                            </div>
-                        </div>
-                        <div class="c-feedbacks__item-body">
-                            <%= post.body %>
-                        </div>
-                        <div class="c-feedbacks__item-source">
-                            <% if(post.source === 'app store'){ %>
-                                <div class="c-feedbacks__from-apple" aria-label="<%= lang[locale].publishedAt %> Apple App Store"></div>
-                            <% } %>
-                            <% if(post.source === 'google play'){ %>
-                                <div class="c-feedbacks__from-google" aria-label="<%= lang[locale].publishedAt %> Google Play Store"></div>
-                            <% } %>
-                        </div>
-                    </div>
-                <% }); %>
-            </div>
-        </div>
-        <div class="c-feedbacks__pagination"></div>
-    </div>
+    <%- include('/sectionAbout') %>
+
+    <%- include('/sectionFeedbacks') %>
+
 </div>

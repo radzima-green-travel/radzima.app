@@ -1,0 +1,10 @@
+<h2 class="c-section-head"><%= sectionAbout[locale].sectionTitle %></h2>
+<div class="c-about">
+    <% sectionAbout[locale].cols.forEach((col) => { %>
+        <div class="c-about__item">
+            <div class="c-about__icon c-about__icon--<%= col.icon %>"></div>
+            <h3><%= col.head %></h3>
+            <p><%= col.body %></p>
+        </div>
+    <% }); %>
+</div>
