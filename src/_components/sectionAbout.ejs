@@ -1,3 +1,6 @@
+<%
+if (!sectionAbout[locale]) { locale = site.defaultLocale; }
+%>
 <h2 class="c-section-head"><%= sectionAbout[locale].sectionTitle %></h2>
 <div class="c-about">
     <% sectionAbout[locale].cols.forEach((col) => { %>

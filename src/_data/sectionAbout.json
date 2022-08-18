@@ -48,5 +48,30 @@
                 "body": "Plan your trip and create lists of your favorite places"
             }
         ]
+    },
+    "ch": {
+        "sectionTitle": "我們的機會",
+        "cols": [
+            {
+                "icon": "search",
+                "head": "在地圖上快速搜索",
+                "body": "直接在地圖上按類別搜索物件"
+            },
+            {
+                "icon": "loc",
+                "head": "關於位置最重要的",
+                "body": "探索新的地方，歷史和觀光"
+            },
+            {
+                "icon": "map",
+                "head": "路線和導航",
+                "body": "設置前往您最喜愛的地點和對象的路線"
+            },
+            {
+                "icon": "fav",
+                "head": "我的最愛",
+                "body": "計劃您的旅行並創建您最喜歡的地方清單"
+            }
+        ]
     }
 }
