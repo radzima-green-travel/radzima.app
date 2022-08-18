@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       appScreenshot.classList.add('u-hidden');
       appScreenshotCarousel.classList.remove('u-hidden');
 
-      Array.from(screenshotList).forEach((elem, i) => {
+      Array.prototype.slice.call(screenshotList).forEach((elem, i) => {
         elem.classList.remove('c-app__grid-cell__selected');
         if (i !== 0) {
           elem.classList.add('u-hidden');
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const currentImg = document.querySelector('.swiper-slide-active');
         const currentDescription = document.getElementById(`description-${currentImg.firstElementChild.id}`);
 
-        Array.from(screenshotList).forEach((elem) => (
+        Array.prototype.slice.call(screenshotList).forEach((elem) => (
           elem !== currentDescription
             ? elem.classList.add('u-hidden')
             : elem.classList.remove('u-hidden')
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           img.src = path;
 
-          Array.from(screenshotList).forEach((elem) => (
+          Array.prototype.slice.call(screenshotList).forEach((elem) => (
             elem !== this
               ? elem.classList.remove('c-app__grid-cell__selected')
               : elem.classList.add('c-app__grid-cell__selected')
