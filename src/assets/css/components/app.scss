@@ -23,6 +23,12 @@
   border-radius: 6px;
   margin: 20px 0;
   border: 1px solid transparent;
+  background-color: $color-page-bg;
+  text-align: justify;
+
+  h3 {
+    margin-bottom: toRem(8);
+  }
 
   &:hover {
     background: #F9F9F9;
@@ -30,10 +36,6 @@
 
     h3 {
       color: #239F0F;
-    }
-
-    div {
-      text-align: justify;
     }
   }
 
@@ -80,6 +82,8 @@
   }
 
   .c-app__grid-cell {
+    min-height: 150px;
+
     &:hover, &:active {
       background: $color-page-bg;
       border: 1px solid transparent;

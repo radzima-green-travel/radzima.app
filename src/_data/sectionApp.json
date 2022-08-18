@@ -1,0 +1,36 @@
+{
+  "ru": {
+      "sectionTitle": "как работает приложение",
+      "items": [
+          {
+              "title": "Выбирай интересные локации",
+              "body": "Заповедные территории, памятники и музеи, культурные объекты и места отдыха - более 500 уникальных локаций."
+          },
+          {
+            "title": "Строй маршрут",
+            "body": "Большой выбор необычных маршрутов с подробным описанием объектов и путей следования."
+          },
+          {
+            "title": "Наслаждайся путешествием",
+            "body": "Приглашай друзей, делись своими уникальными находками и отправляйся в новое увлекательное путешествие."
+          }
+      ]
+  },
+  "en": {
+    "sectionTitle": "how the application works",
+    "items": [
+        {
+            "title": "Choose interesting locations ",
+            "body": "Protected areas, cultural and recreational sites, monuments and museums - more than 500 unique locations."
+        },
+        {
+          "title": "Set a route",
+          "body": "A great choice of unusual routes with a detailed description of objects and ways to go through."
+        },
+        {
+          "title": "Enjoy your trip",
+          "body": "Invite your friends, share your unique finds and dive into an exciting new journey."
+        }
+    ]
+  }
+}
