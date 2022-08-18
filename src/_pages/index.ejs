@@ -5,14 +5,21 @@ title: Radzima App
 <script>
 let locale = 'ru';
 const langs = <%- JSON.stringify(Object.keys(lang)) %>;
+
 try {
     const savedLocale = window.localStorage.getItem('locale');
+
     if (savedLocale && langs.indexOf(savedLocale) !== -1) {
         locale = savedLocale;
     } else {
-        const browserLocale = window.navigator && window.navigator.languages && window.navigator.languages[0];
+        const browserLocale = window.navigator && window.navigator.languages && window.navigator.languages[0].substring(0, 2);
+
         if (browserLocale && langs.indexOf(browserLocale) !== -1) {
             locale = browserLocale;
+
+            if (locale === 'zh') {
+                locale = 'ch';
+            }
         }
     }
     window.localStorage.setItem('locale', locale);

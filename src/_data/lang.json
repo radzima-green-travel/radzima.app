@@ -1,6 +1,5 @@
 {
     "ru": {
-        "download": "Скачать",
         "downloadText": "Скачайте приложение и начните свое увлекательное путешествие по Беларуси",
         "downloadAppStore": "Скачать из App Store",
         "downloadGooglePlay": "Скачать из Google Play",
@@ -11,7 +10,6 @@
         "privacyPolicy": "Политика Конфиденциальности"
     },
     "en": {
-        "download": "Download",
         "downloadText": "Download the app and start your exciting journey around Belarus",
         "downloadAppStore": "Download on the App Store",
         "downloadGooglePlay": "Get it on Google Play",
@@ -20,5 +18,15 @@
         "footFeedbackBody": "<p>Tell us about your experience with Radzima.</p><p>Your opinion can influence the development of the project.</p>",
         "navigation": "Navigation",
         "privacyPolicy": "Privacy Policy"
+    },
+    "ch": {
+        "downloadText": "下載應用程式，開始您在白俄羅斯的激動人心的旅程",
+        "downloadAppStore": "在 AppStore 上下載",
+        "downloadGooglePlay": "在 Google Play 上獲取",
+        "feedbackBtn": "聯繫我們",
+        "footFeedbackTitle": "幫助我們變得更好",
+        "footFeedbackBody": "<p>告訴我們您在Radzima的經歷。</p><p>您的意見可以影響項目的發展。</p>",
+        "navigation": "導航",
+        "privacyPolicy": "隱私政策"
     }
 }

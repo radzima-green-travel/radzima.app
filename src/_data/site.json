@@ -1,12 +1,16 @@
 {
-  "url": "http://example.com",
+  "url": "https://radzima.app",
   "appGooglePlay": "https://play.google.com/store/apps/details?id=app.radzima",
   "appAppleStore": "https://apps.apple.com/app/radzima/id1587158874",
   "privacyPolicy": "https://www.epam.com/privacy-policy",
+  "defaultLocale": "ru",
   "en": {
-    "description": "Site meta description"
+    "description": "TBD_en_description"
   },
   "ru": {
-    "description": "Описание страницы в мета"
+    "description": "TBD_ru_description"
+  },
+  "ch": {
+    "description": "TBD_ch_description"
   }
 }

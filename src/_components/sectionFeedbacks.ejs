@@ -1,3 +1,6 @@
+<%
+if (!feedbacks[locale] || !sectionFeedbacks[locale]) { locale = site.defaultLocale; }
+%>
 <div class="c-feedbacks">
     <h2 class="c-section-head"><%= sectionFeedbacks[locale].sectionTitle %></h2>
     <div class="c-feedbacks__nav">
