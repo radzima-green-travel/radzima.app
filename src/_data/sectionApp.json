@@ -4,15 +4,24 @@
       "items": [
           {
               "title": "Выбирай интересные локации",
-              "body": "Заповедные территории, памятники и музеи, культурные объекты и места отдыха - более 500 уникальных локаций."
+              "body": "Заповедные территории, памятники и музеи, культурные объекты и места отдыха - более 500 уникальных локаций.",
+              "id": "screenshot-app-1",
+              "src": "/images/screenshot-app-1.png",
+              "alt": "screenshot-app-1"
           },
           {
             "title": "Строй маршрут",
-            "body": "Большой выбор необычных маршрутов с подробным описанием объектов и путей следования."
+            "body": "Большой выбор необычных маршрутов с подробным описанием объектов и путей следования.",
+            "id": "screenshot-app-2",
+            "src": "/images/screenshot-app-2.png",
+            "alt": "screenshot-app-2"
           },
           {
             "title": "Наслаждайся путешествием",
-            "body": "Приглашай друзей, делись своими уникальными находками и отправляйся в новое увлекательное путешествие."
+            "body": "Приглашай друзей, делись своими уникальными находками и отправляйся в новое увлекательное путешествие.",
+            "id": "screenshot-app-3",
+            "src": "/images/screenshot-app-3.png",
+            "alt": "screenshot-app-3"
           }
       ]
   },
@@ -21,15 +30,24 @@
     "items": [
         {
             "title": "Choose interesting locations ",
-            "body": "Protected areas, cultural and recreational sites, monuments and museums - more than 500 unique locations."
+            "body": "Protected areas, cultural and recreational sites, monuments and museums - more than 500 unique locations.",
+            "id": "screenshot-app-1",
+            "src": "/images/screenshot-app-1.png",
+            "alt": "screenshot-app-1"
         },
         {
           "title": "Set a route",
-          "body": "A great choice of unusual routes with a detailed description of objects and ways to go through."
+          "body": "A great choice of unusual routes with a detailed description of objects and ways to go through.",
+          "id": "screenshot-app-2",
+          "src": "/images/screenshot-app-2.png",
+          "alt": "screenshot-app-2"
         },
         {
           "title": "Enjoy your trip",
-          "body": "Invite your friends, share your unique finds and dive into an exciting new journey."
+          "body": "Invite your friends, share your unique finds and dive into an exciting new journey.",
+          "id": "screenshot-app-3",
+          "src": "/images/screenshot-app-3.png",
+          "alt": "screenshot-app-3"
         }
     ]
   }
