@@ -5,15 +5,11 @@
   </div>
   <div class="swiper c-app__imgs u-hidden">
     <div class="swiper-wrapper">
-      <div class="swiper-slide c-app__img">
-        <img id="screenshot-app-1" src="/images/screenshot-app-1.png" alt="screenshot-app-1">
-      </div>
-      <div class="swiper-slide c-app__img">
-        <img id="screenshot-app-2" src="/images/screenshot-app-2.png" alt="screenshot-app-2">
-      </div>
-      <div class="swiper-slide c-app__img">
-        <img id="screenshot-app-3" src="/images/screenshot-app-3.png" alt="screenshot-app-3">
-      </div>
+      <% sectionApp[locale].items.forEach((item, i) => { %>
+        <div class="swiper-slide c-app__img">
+          <img id="<%= item.id %>" src="<%= item.src %>" alt="<%= item.alt %>">
+        </div>
+      <% }); %>
     </div>
     <div class="c-app__pagination"></div>
   </div>
