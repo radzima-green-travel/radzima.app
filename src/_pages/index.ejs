@@ -16,10 +16,6 @@ try {
 
         if (browserLocale && langs.indexOf(browserLocale) !== -1) {
             locale = browserLocale;
-
-            if (locale === 'zh') {
-                locale = 'ch';
-            }
         }
     }
     window.localStorage.setItem('locale', locale);
