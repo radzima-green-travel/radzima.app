@@ -15,6 +15,7 @@ var pageDescription = locals.description || site[locale].description;
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <title><%= locals.title %></title>
 <meta name="description" content="<%= pageDescription %>" />
+<meta name="apple-itunes-app" content="app-id=<%= site.appAppStoreId %>, app-argument=https://radzima.app">
 <%- include('/altlang') %>
 <link rel="stylesheet" href="/assets/main.css?<%- cacheBust.mainCss %>" />
 <link rel="icon" type="image/png" href="/images/logo-icon.svg" />
