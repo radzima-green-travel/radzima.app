@@ -12,6 +12,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/assets/vendor/swiper-bundle.min.js': 'assets/swiper.min.js' });
   // Copy all
   eleventyConfig.addPassthroughCopy('src/images');
+  eleventyConfig.addPassthroughCopy({ 'src/assets/files': '.' });
 
   if (process.env.ELEVENTY_ENV === 'production') {
     eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
