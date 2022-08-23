@@ -6,12 +6,12 @@
   "privacyPolicy": "https://www.epam.com/privacy-policy",
   "defaultLocale": "ru",
   "en": {
-    "description": "TBD_en_description"
+    "description": "Entire catalogue of objects in Belarus - castles, monuments, unusual places. Choose excursions, build routes - more than 500 unique locations in one place!"
   },
   "ru": {
     "description": "Полный каталог объектов Беларуси - замки, памятники, необычные места. Выбирайте экскурсии, стройте маршруты - более 500 уникальных локаций в одном месте!"
   },
   "zh": {
-    "description": "TBD_ch_description"
+    "description": "白俄羅斯物品的完整目錄 - 城堡，紀念碑，不尋常的地方。 選擇短途旅行，建立路線 - 一個地方有 500 多個獨特的地點！"
   }
 }
