@@ -1,5 +1,7 @@
 .c-promo {
     display: flex;
+}
+.c-promo:last-child {
     margin-bottom: 80px;
 }
 .c-promo__body {
@@ -60,6 +62,7 @@
         }
     }
 }
+
 @include Mobile {
     .c-promo {
         padding-top: 40px;
@@ -73,11 +76,24 @@
         display: none;
     }
     .c-promo__btns {
-        margin-right: -12px;
-        padding-top: 38px;
+      padding-top: 38px;
+      display: flex;
+      justify-content: center;
 
-        a {
-            margin-right: 12px;
-        }
+      a {
+        margin: 0;
+      }
+  
+      a:first-child {
+        margin-right: 12px;
+      }
     }
+}
+
+@include MobileSmall {
+  .c-promo__btns {
+    a:first-child {
+      margin-right: 5px;
+    }
+  }
 }
