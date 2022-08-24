@@ -39,7 +39,7 @@
     .footer {
         padding-bottom: 20px;
         font-size: toRem(14);
-    
+
         .container {
             flex-direction: column-reverse;
         }
@@ -61,4 +61,16 @@
     .footer {
         font-size: toRem(12);
     }
+}
+
+@include MobileSmall {
+  .footer__apps {
+    a {
+      margin: 0;
+    }
+
+    a:first-child {
+      margin-right: 5px;
+    }
+  }
 }
