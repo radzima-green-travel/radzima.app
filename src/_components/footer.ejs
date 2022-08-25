@@ -22,12 +22,15 @@
         <div class="footer__copy">
             &copy; 2022 EPAM Systems, All rights reserved
         </div>
-        <div class="footer__apps">
-            <%- include('/googleplay_badge') %>
-            <%- include('/appstore_badge') %>
-        </div>
+    </div>
+    <div class="footer__apps">
+        <%- include('/googleplay_badge') %>
+        <%- include('/appstore_badge') %>
+    </div>
+    <div class="container">
         <div class="footer__links">
-            <a href="<%= site.privacyPolicy %>" target="_blank" rel="noopener"><%= lang[locale].privacyPolicy %></a>
+            <a href="<%= site.privacyPolicy %>" target="_blank"
+               rel="noopener"><%= lang[locale].privacyPolicy %></a>
         </div>
     </div>
 </footer>
