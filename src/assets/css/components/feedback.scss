@@ -26,7 +26,7 @@
             padding: 0 50px;
         }
     }
-    
+
     @include Mobile {
         .container {
             padding-top: 65px;
@@ -40,6 +40,9 @@
             margin-right: 3px;
         }
         .btn-primary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             height: 43px;
             margin: 24px auto 0;
