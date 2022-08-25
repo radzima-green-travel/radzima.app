@@ -5,10 +5,13 @@
     font-size: toRem(16);
     color: #fff;
 
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+
     .container {
         display: flex;
         align-items: center;
-        min-height: 48px;
 
         > div {
             flex: 1 0 auto;
@@ -18,6 +21,7 @@
 .footer__apps {
     display: flex;
     margin: 0 auto;
+    justify-content: center;
 
     a {
         margin: 0 17px;
@@ -31,12 +35,14 @@
     a {
         text-decoration: none;
 
-        @include hoverOpacity;
+      @include hoverOpacity;
     }
 }
 
 @include Tablet {
     .footer {
+        flex-direction: column-reverse;
+
         padding-bottom: 20px;
         font-size: toRem(14);
 
