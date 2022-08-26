@@ -2,19 +2,25 @@
     padding: 72px 0 64px;
     background: #e9f6e7;
     color: #292F2C;
-    
+
     .container {
         display: flex;
     }
-    
+
     h2 {
         max-width: 560px;
         color: inherit;
     }
+
+    .c-download-banner__cont {
+      display: flex;
+    }
 }
+
 .c-download-banner__btns {
     flex-shrink: 0;
-    display: flex; align-items: center;
+    display: flex;
+    align-items: center;
     margin-left: auto;
 
     a {
@@ -24,45 +30,60 @@
     }
 }
 
+.c-download-banner__btns_bottom {
+  display: none;
+}
+
 @include Tablet {
     .c-download-banner {
         padding: 50px 0;
+
+        .container {
+          justify-content: center;
+        }
     }
     .c-download-banner__btns {
         margin-left: 40px;
 
-        a {
-            margin-left: 16px;
-        }
-        img {
-            width: auto;
-            height: 40px;
-        }
     }
 }
 
 @include Mobile {
-    .c-download-banner {
-        padding: 90px 0 50px;
-        background-image: url(../../images/bg-curve-grn.svg);
-        background-position: 50% 20px;
-        background-repeat: no-repeat;
-        background-size: contain;
+  .c-download-banner {
+    padding: 90px 0 50px;
+    background-image: url(../../images/bg-curve-grn.svg);
+    background-position: 50% 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-        .container {
-            flex-direction: column;
-            align-items: center;
-        }
-        h2 {
-            margin-bottom: 26px;
-            text-align: center;
-        }
-    }
-    .c-download-banner__btns {
-        margin: 0 -16px;
 
-        a {
-            margin: 0 8px;
-        }
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin-bottom: 26px;
+      text-align: center;
     }
+  }
+
+  .c-download-banner__btns {
+    display: none;
+  }
+
+  .c-download-banner__btns_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a:first-child {
+      margin-right: 12px;
+    }
+  }
+}
+
+@include MobileSmall {
+  .c-download-banner__btns_bottom {
+    a:first-child {
+      margin-right: 5px;
+    }
+  }
 }
