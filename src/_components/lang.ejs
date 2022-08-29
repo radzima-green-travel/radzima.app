@@ -5,7 +5,7 @@ var langs = Object.keys(lang);
 <% langs.forEach((lang) => { 
     if(lang === locale) {
     %>
-    <li class="c-lang__current"><%= lang %></li>
+    <li class="c-lang__current" aria-current="page"><%= lang %></li>
     <%
     } else {
     %>
