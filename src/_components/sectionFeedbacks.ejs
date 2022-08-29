@@ -1,5 +1,5 @@
 <%
-if (!feedbacks[locale] || !sectionFeedbacks[locale]) { locale = site.defaultLocale; }
+if (!sectionFeedbacks[locale]) { locale = site.defaultLocale; }
 %>
 <div class="c-feedbacks">
     <h2 class="c-section-head"><%= sectionFeedbacks[locale].sectionTitle %></h2>
@@ -9,20 +9,17 @@ if (!feedbacks[locale] || !sectionFeedbacks[locale]) { locale = site.defaultLoca
     </div>
     <div class="swiper c-feedbacks__items">
         <div class="swiper-wrapper">
-            <% feedbacks[locale].forEach((post) => { %>
+            <% feedbacks.forEach((post) => { %>
                 <div class="swiper-slide c-feedbacks__item">
                     <div class="c-feedbacks__item-head">
                         <div class="c-feedbacks__item-userpic">
-                            <img src="https://eu.ui-avatars.com/api/?background=random&name=<%= post.author %>&size=48">
+                            <img src="https://eu.ui-avatars.com/api/?background=random&name=<%= post.author %>&size=48" alt="<%= post.author %>" aria-hidden="true">
                         </div>
                         <div class="c-feedbacks__item-name">
                             <%= post.author %>
                         </div>
-                        <div
-                            class="c-feedbacks__item-rate"
-                            style="width: <%= Number(post.rate)*22 %>px;"
-                            aria-label="<%= sectionFeedbacks[locale].rate %> <%= post.rate %>"
-                            >
+                        <div class="c-feedbacks__item-rate" style="width: <%= Number(post.rate)*22 %>px;">
+                            <span class="u-visually-hidden"><%= sectionFeedbacks[locale].rate %> <%= post.rate %></span>
                         </div>
                     </div>
                     <div class="c-feedbacks__item-body">
@@ -30,10 +27,12 @@ if (!feedbacks[locale] || !sectionFeedbacks[locale]) { locale = site.defaultLoca
                     </div>
                     <div class="c-feedbacks__item-source">
                         <% if(post.source === 'app store'){ %>
-                            <div class="c-feedbacks__from-apple" aria-label="<%= sectionFeedbacks[locale].publishedAt %> Apple App Store"></div>
+                            <div class="c-feedbacks__from-apple"></div>
+                            <span class="u-visually-hidden"><%= sectionFeedbacks[locale].publishedAt %> Apple App Store</span>
                         <% } %>
                         <% if(post.source === 'google play'){ %>
-                            <div class="c-feedbacks__from-google" aria-label="<%= sectionFeedbacks[locale].publishedAt %> Google Play Store"></div>
+                            <div class="c-feedbacks__from-google"></div>
+                            <span class="u-visually-hidden"><%= sectionFeedbacks[locale].publishedAt %> Google Play Store</span>
                         <% } %>
                     </div>
                 </div>
