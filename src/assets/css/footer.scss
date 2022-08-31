@@ -18,24 +18,14 @@
         }
     }
 }
-.footer__apps {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
 
-    a {
-        margin: 0 17px;
-
-        @include hoverOpacity;
-    }
-}
 .footer__links {
     text-align: right;
 
     a {
         text-decoration: none;
 
-      @include hoverOpacity;
+        @include hoverOpacity;
     }
 }
 
@@ -50,14 +40,7 @@
             flex-direction: column-reverse;
         }
     }
-    .footer__apps {
-        order: 1;
-        padding: 4px 0 7px;
 
-        a {
-            margin: 0 5px;
-        }
-    }
     .footer__links {
         margin-bottom: 13px;
     }
@@ -70,13 +53,7 @@
 }
 
 @include MobileSmall {
-  .footer__apps {
-    a {
-      margin: 0;
-    }
-
-    a:first-child {
-      margin-right: 5px;
-    }
+  a:first-child {
+    margin-right: 5px;
   }
 }
