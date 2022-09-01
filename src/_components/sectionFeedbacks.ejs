@@ -13,7 +13,7 @@ if (!sectionFeedbacks[locale]) { locale = site.defaultLocale; }
                 <div class="swiper-slide c-feedbacks__item">
                     <div class="c-feedbacks__item-head">
                         <div class="c-feedbacks__item-userpic">
-                            <img src="https://eu.ui-avatars.com/api/?background=random&name=<%= post.author %>&size=48" alt="<%= post.author %>" aria-hidden="true">
+                            <img src="https://eu.ui-avatars.com/api/?background=random&name=<%= post.author.replace(/\s/g, '%20') %>&size=48" alt="<%= post.author %>" aria-hidden="true">
                         </div>
                         <div class="c-feedbacks__item-name">
                             <%= post.author %>

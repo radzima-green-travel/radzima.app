@@ -20,8 +20,24 @@ var pageDescription = locals.description || site[locale].description;
 <link rel="stylesheet" href="/assets/main.css?<%- cacheBust.mainCss %>" />
 <link rel="icon" type="image/png" href="/images/logo-icon.svg" />
 
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="<%= site.url %>" />
+<meta property="og:title" content="<%= locals.title %>" />
+<meta property="og:description" content="<%= pageDescription %>" />
+<meta property="og:url" content="<%= site.url %>" />
+<meta property="og:image" content="/images/og-1200x628.png" />
+<meta property="og:site_name" content="Radzima" /> 
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="<%= site.url %>" />
+<meta name="twitter:title" content="<%= locals.title %>">
+<meta name="twitter:description" content="<%= pageDescription %>">
+<meta name="twitter:image" content="/images/og-1200x628.png">
+
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script>
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 var z = null;m[i].l=1*new Date();
 for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -29,7 +45,7 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNo
 (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 ym(90046942, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/90046942" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><img src="https://mc.yandex.ru/watch/90046942" style="position:absolute; left:-9999px;" alt="" /></noscript>
 <!-- /Yandex.Metrika counter -->
 
 <meta name="yandex-verification" content="974824206486c706" />
