@@ -4,5 +4,5 @@ var pattern = '^(\/' + locale + ')';
 var reg = new RegExp(pattern, '');
 %>
 <% langs.forEach((lang) => { %>
-<link href="/<%= page.url.replace(reg, lang) %>" rel="alternate" hreflang="<%= lang %>">
+<link href="<%= site.url %>/<%= page.url.replace(reg, lang) %>" rel="alternate" hreflang="<%= lang %>">
 <% }); %>
