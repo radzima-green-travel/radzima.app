@@ -30,6 +30,14 @@ jobs:
         run: yarn install
       - name: Build
         run: yarn run prod
+        env: 
+          APP_ID:  ${{ secrets.APP_ID }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
+          ISSUE_ID: ${{ secrets.ISSUE_ID }}
+          BUCKET: ${{ secrets.BUCKET }}
+          PACKAGE_NAME: ${{ secrets.PACKAGE_NAME }}
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
       - name: Deploy to development
         if: ${{ startsWith(github.ref_name, 'release/') != true }}
         run: aws s3 sync ./dist s3://${{ secrets.BUCKET_DEV }}
