@@ -30,8 +30,8 @@ jobs:
         run: yarn install
       - name: Build
         run: yarn run prod
-        env: 
-          APP_ID:  ${{ secrets.APP_ID }}
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
           ISSUE_ID: ${{ secrets.ISSUE_ID }}
@@ -46,7 +46,7 @@ jobs:
         run: aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_DEV }} --paths '/*'
       - name: Deploy to production
         if: ${{ startsWith(github.ref_name, 'release/') }}
-        run: aws s3 sync ./dist s3://${{ secrets.BUCKET_PROD }}
+        run: aws s3 sync ./dist s3://${{ secrets.BUCKET_PROD }} &&  aws s3 sync --content-type  'image/svg+xml' ./dist/images/reviews s3://${{ secrets.BUCKET_PROD }}/images/reviews 
       - name: Invalidate cache
         if: ${{ startsWith(github.ref_name, 'release/') }}
         run: aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_PROD }} --paths '/*'
