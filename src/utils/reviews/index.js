@@ -14,7 +14,7 @@ const API_KEY = process.env.API_KEY;
 const ISSUE_ID = process.env.ISSUE_ID;
 const BUCKET = process.env.BUCKET;
 const PACKAGE_NAME = process.env.PACKAGE_NAME;
-const CREDENTIALS = process.env.CREDENTIALS;
+const GOOGLE_CREDENTIALS = process.env.GOOGLE_CREDENTIALS;
 
 const REVIEWS_TEMP =
   process.env.REVIEWS_TEMP || path.resolve(__dirname, `temp/`);
@@ -86,7 +86,7 @@ async function getReviewsAppleStoreData() {
 }
 
 const auth = new GoogleAuth({
-  credentials: JSON.parse(CREDENTIALS),
+  credentials: JSON.parse(GOOGLE_CREDENTIALS),
   scopes: [
     "https://www.googleapis.com/auth/devstorage.read_only",
     "https://www.googleapis.com/auth/androidpublisher",
