@@ -16,6 +16,8 @@ const BUCKET = process.env.BUCKET;
 const PACKAGE_NAME = process.env.PACKAGE_NAME;
 const GOOGLE_CREDENTIALS = process.env.GOOGLE_CREDENTIALS;
 
+console.info(APP_ID, PACKAGE_NAME);
+
 const REVIEWS_TEMP =
   process.env.REVIEWS_TEMP || path.resolve(__dirname, `temp/`);
 
