@@ -16,8 +16,6 @@ const BUCKET = process.env.BUCKET;
 const PACKAGE_NAME = process.env.PACKAGE_NAME;
 const GOOGLE_CREDENTIALS = process.env.GOOGLE_CREDENTIALS;
 
-console.info(APP_ID, PACKAGE_NAME);
-
 const REVIEWS_TEMP =
   process.env.REVIEWS_TEMP || path.resolve(__dirname, `temp/`);
 
@@ -59,7 +57,11 @@ async function retry(request, retries) {
   });
 }
 async function getReviewsAppleStoreData() {
-  const token = getBearerToken(ISSUE_ID, API_KEY, PRIVATE_KEY);
+  const token = getBearerToken(
+    ISSUE_ID,
+    API_KEY,
+    PRIVATE_KEY.replace(/\\n/g, "\n")
+  );
   return retry(() => {
     var req = {
       url: `https://api.appstoreconnect.apple.com/v1/apps/${APP_ID}/customerReviews`,
