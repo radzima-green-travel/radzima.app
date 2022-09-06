@@ -5,6 +5,9 @@
 __MACOSX/
 .DS_Store
 Thumbs.db
+**/temp/
+**/images/reviews/**
+**/_data/_cache/**
 
 # Android/IntelliJ
 #
