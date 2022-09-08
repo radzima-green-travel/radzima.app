@@ -21,10 +21,10 @@ module.exports = function () {
   ]).then(([appleStoreReviews, googlePlayReviews]) => {
     preProcess(path.resolve(__dirname, "_cache/"));
 
-    fs.writeFileSync(
-      cacheFilePath,
-      JSON.stringify([...appleStoreReviews, ...googlePlayReviews].sort((a, b) => new Date(b.createdDate) - new Date(a.createdDate)))
+    const sortedData = [...appleStoreReviews, ...googlePlayReviews].sort(
+      (a, b) => new Date(b.createdDate) - new Date(a.createdDate)
     );
-    return [...appleStoreReviews, ...googlePlayReviews];
+    fs.writeFileSync(cacheFilePath, JSON.stringify(sortedData));
+    return sortedData;
   });
 };
