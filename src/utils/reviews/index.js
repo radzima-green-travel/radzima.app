@@ -8,6 +8,8 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 
+require("dotenv").config();
+
 const APP_ID = process.env.APP_ID;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const API_KEY = process.env.API_KEY;
@@ -83,6 +85,7 @@ async function getReviewsAppleStoreData() {
           rate: it.attributes.rating,
           body: it.attributes.body,
           image: imageName,
+          createdDate: it.attributes.createdDate,
         };
       })
     );
@@ -187,6 +190,7 @@ async function getReviewsGooglePlayData() {
         rate: data.comments[0].userComment.starRating,
         body: review["Review Text"],
         image: imageName,
+        createdDate: review["Review Submit Date and Time"],
       });
     }
     return result;

@@ -23,7 +23,7 @@ module.exports = function () {
 
     fs.writeFileSync(
       cacheFilePath,
-      JSON.stringify([...appleStoreReviews, ...googlePlayReviews])
+      JSON.stringify([...appleStoreReviews, ...googlePlayReviews].sort((a, b) => new Date(b.createdDate) - new Date(a.createdDate)))
     );
     return [...appleStoreReviews, ...googlePlayReviews];
   });
