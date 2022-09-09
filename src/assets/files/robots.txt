@@ -13,4 +13,7 @@ Allow: /images/
 Disallow: /js/
 Disallow: /css/
 
+User-agent: Twitterbot
+Disallow:
+
 Host:https://radzima.app/
