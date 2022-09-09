@@ -1,26 +1,3 @@
-<div class="c-download-banner">
-    <div class="container">
-        <h2><%= lang[locale].downloadText %></h2>
-        <div class="c-download-banner__btns">
-            <%- include('/googleplay_badge') %>
-            <%- include('/appstore_badge') %>
-        </div>
-    </div>
-    <div class="c-download-banner__btns_bottom">
-        <%- include('/googleplay_badge') %>
-        <%- include('/appstore_badge') %>
-    </div>
-</div>
-
-<div class="c-feedback">
-    <div class="container">
-        <h2><%= lang[locale].footFeedbackTitle %></h2>
-        <%- lang[locale].footFeedbackBody %>
-        <a href="mailto:support@radzima.app" class="btn-primary">
-            <%= lang[locale].feedbackBtn %>
-        </a>
-    </div>
-</div>
 <footer class="footer">
     <div class="container">
         <div class="footer__copy">
@@ -29,8 +6,10 @@
     </div>
     <div class="container">
         <div class="footer__links">
-            <a href="<%= site.privacyPolicy %>" target="_blank"
-               rel="noopener"><%= lang[locale].privacyPolicy %></a>
+            <a href="<%= site.privacyPolicy %>" target="_blank" rel="noopener">
+               <%= lang[locale].privacyPolicy %>
+               <span class="u-visually-hidden"><%= lang[locale].externalLinkWarning%></span>
+            </a>
         </div>
     </div>
 </footer>

@@ -1,5 +1,11 @@
 {
     "ru": {
+        "langName": {
+            "ru": "русский",
+            "en": "russian",
+            "zh": "俄語"
+        },
+        "langSwitch": "Сменить язык на %",
         "downloadText": "Скачайте приложение и начните свое увлекательное путешествие по Беларуси",
         "feedbackBtn": "Связаться с нами",
         "footFeedbackTitle": "Помогите нам стать лучше",
@@ -9,9 +15,16 @@
         "appstoreImageName": "appstore_ru",
         "googlePlayImageName": "googleplay_ru",
         "appstoreImageAlt": "Скачать в AppStore",
-        "googlePlayImageAlt": "Получить в Google Play"
+        "googlePlayImageAlt": "Получить в Google Play",
+        "externalLinkWarning": "Откроется в новом окне"
     },
     "en": {
+        "langName": {
+            "ru": "английский",
+            "en": "english",
+            "zh": "英語"
+        },
+        "langSwitch": "Switch language to %",
         "downloadText": "Download the app and start your exciting journey around Belarus",
         "feedbackBtn": "Contact Us",
         "footFeedbackTitle": "Help us to get better",
@@ -21,9 +34,16 @@
         "appstoreImageName": "appstore_us",
         "googlePlayImageName": "googleplay_us",
         "appstoreImageAlt": "Download in AppStore",
-        "googlePlayImageAlt": "Get it on Google Play"
+        "googlePlayImageAlt": "Get it on Google Play",
+        "externalLinkWarning": "Opens a new window"
     },
     "zh": {
+        "langName": {
+            "ru": "китайский",
+            "en": "chinese",
+            "zh": "中文"
+        },
+        "langSwitch": "切換語言為%",
         "downloadText": "下載應用程式，開始您在白俄羅斯的激動人心的旅程",
         "feedbackBtn": "聯繫我們",
         "footFeedbackTitle": "幫助我們變得更好",
@@ -33,6 +53,7 @@
         "appstoreImageName": "appstore_cn",
         "googlePlayImageName": "googleplay_cn",
         "appstoreImageAlt": "在 AppStore 中下载",
-        "googlePlayImageAlt": "在 Google Play 上获取"
+        "googlePlayImageAlt": "在 Google Play 上获取",
+        "externalLinkWarning": "打開一個新窗口"
     }
 }
