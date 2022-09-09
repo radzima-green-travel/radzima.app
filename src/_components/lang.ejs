@@ -2,14 +2,18 @@
 var langs = Object.keys(lang);
 %>
 <ul class="c-lang">
-<% langs.forEach((lang) => { 
-    if(lang === locale) {
+<% langs.forEach((lng) => { 
+    if(lng === locale) {
     %>
-    <li class="c-lang__current" aria-current="page"><%= lang %></li>
+    <li class="c-lang__current" aria-hidden="true"><%= lng %></li>
     <%
     } else {
     %>
-    <li><a href="/<%= lang %>"><%= lang %></a></li>
+    <li>
+        <a href="/<%= lng %>" rel="alternate" hreflang="<%= lng %>" aria-label="<%= lang[locale].langSwitch.replace('%', lang[lng].langName[locale]) %>">
+            <%= lng %>
+        </a>
+    </li>
     <%
     }
 }); %>

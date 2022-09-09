@@ -52,11 +52,12 @@ ym(90046942, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: tr
 </head>
 <body>
 
-
 <div class="page-layout">
   <%- include('/header') %>
   <main class="main">
     <%- content -%>
+    <%- include('/sectionDownloadBanner') %>
+    <%- include('/sectionFeedback') %>
   </main>
   <%- include('/footer') %>
 </div>
