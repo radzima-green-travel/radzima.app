@@ -2,9 +2,18 @@
 Landing page for application
 
 # Development
-Create .env variables file and provide necessery env variables.
+1. Create `.env` file. Minimal working file is in `.env.example`:
+```
+APP_ID=
+PRIVATE_KEY=
+API_KEY=
+ISSUE_ID=
+BUCKET=
+PACKAGE_NAME=
+GOOGLE_CREDENTIALS={}
+```
 
-Env variables are required in order to autogenerate feedbacks, if you want to proceed without it, you can create feedbacks.json file in `src\_data\_cache` with the following content, for example: 
+2. Env variables are required in order to autogenerate feedbacks, if you want to proceed without it, you can create file `src/_data/_cache/feedbacks.json` with the following content: 
 ```
 [
   {
@@ -23,21 +32,12 @@ Env variables are required in order to autogenerate feedbacks, if you want to pr
   }
 ]
 ```
-Otherwise, you need to provide env variables
-```
-APP_ID=
-PRIVATE_KEY=
-API_KEY=
-ISSUE_ID=
-BUCKET=
-PACKAGE_NAME=
-GOOGLE_CREDENTIALS=
-```
-Install dependencies
+
+3. Install dependencies
 ```
 npm i
 ```
-Run npm command
+4. Run npm command
 ```
 npm run dev
 ```
