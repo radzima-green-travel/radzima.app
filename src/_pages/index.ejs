@@ -33,7 +33,7 @@ window.location.replace('/'+locale);
         <% collections.all.forEach((page) => { %>
             <li>
                 <a href="<%= page.url %>"><%= page.data.title %></a>
-                <div class="c-sitemap-url"><%= site.url %><%= page.url %></div>
+                <div class="c-sitemap-url"><%= site.url[process.env.ENV || 'dev'] %><%= page.url %></div>
             </li>
         <% }); %>
         </ul>
