@@ -26,15 +26,14 @@ var pageDescription = locals.description || site[locale].description;
 <meta property="og:title" content="<%= locals.title %>" />
 <meta property="og:description" content="<%= pageDescription %>" />
 <meta property="og:url" content="<%= site.url %>" />
-<meta property="og:image" content="/images/og-1200x628.png" />
+<meta property="og:image" content="<%= site.url %>/images/og-1200x628.png" />
 <meta property="og:site_name" content="Radzima" /> 
 
 <!-- Twitter -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="<%= site.url %>" />
 <meta name="twitter:title" content="<%= locals.title %>">
 <meta name="twitter:description" content="<%= pageDescription %>">
-<meta name="twitter:image" content="/images/og-1200x628.png">
 
 <!-- Yandex.Metrika counter -->
 <script>
