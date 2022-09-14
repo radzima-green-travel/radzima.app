@@ -5,6 +5,12 @@
     @return $remValue;
 }
 
+@mixin SmallDesktop {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
 @mixin Tablet {
     @media (max-width: 1023px) {
         @content;

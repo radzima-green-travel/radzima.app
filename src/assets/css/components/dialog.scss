@@ -1,0 +1,66 @@
+body.dialog-opened {
+    overflow: hidden;
+}
+
+
+.c-dialog-overlay {
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(30, 31, 32, 0.04);
+    transition: background .3s, opacity .2s;
+
+    &.m-ready {
+        background: rgba(30, 31, 32, 0.24);
+
+        .c-dialog {
+            transform: none;
+        }
+        .c-dialog__body {
+            visibility: visible;
+        }
+    }
+    &.m-closing {
+        opacity: 0;
+
+        .c-dialog {
+            transform: scale(0.9);
+        }
+    }
+}
+.c-dialog {
+	position: relative;
+	max-width: 725px;
+	max-height: 95%;
+	width: 98%;
+	padding: 24px;
+	border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(217, 217, 217, 0.25);
+    background: #fff;
+    overflow: auto;
+	transform: scale(1.1);
+	transition: transform .3s;
+    outline: none;
+}
+.c-dialog__body {
+    visibility: hidden;
+    color: #1E1F20;
+}
+
+.c-dialog__close {
+	position: absolute;
+	top: 16px;
+    right: 16px;
+	width: 40px;
+	height: 40px;
+	border: 0;
+	background: url(../../images/icon-close.svg) 50% no-repeat;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

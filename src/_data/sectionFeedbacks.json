@@ -2,16 +2,22 @@
     "ru": {
         "sectionTitle": "о нас говорят",
         "publishedAt": "Опубликовано в",
-        "rate": "Оценка"
+        "rate": "Оценка",
+        "fullTextBtn": "Показать полный текст",
+        "fullTextDialog": "Полный текст отзыва"
     },
     "en": {
         "sectionTitle": "About us",
         "publishedAt": "Posted on",
-        "rate": "Rate"
+        "rate": "Rate",
+        "fullTextBtn": "Show full text",
+        "fullTextDialog": "Full feedback text"
     },
     "zh": {
         "sectionTitle": "關於我們",
         "publishedAt": "發表於",
-        "rate": "年級"
+        "rate": "年級",
+        "fullTextBtn": "顯示全文",
+        "fullTextDialog": "完整的反饋文本"
     }
 }

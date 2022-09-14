@@ -22,13 +22,32 @@
     border: 1px solid rgba(235, 235, 245, 0.7);
     box-shadow: 0px 0px 20px rgba(217, 217, 217, 0.25);
     border-radius: 8px;
-    padding: 23px 23px 18px;
+    padding: 30px 30px 26px;
     color: #1E1F20;
+
+    @include SmallDesktop {
+        padding: 23px 24px 18px;
+    }
+    @include Mobile {
+        padding: 13px 16px 10px;
+    }
 }
 .c-feedbacks__item-head {
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     padding-left: 63px;
+
+    @include SmallDesktop {
+        margin-bottom: 22px;
+    }
+    @include Mobile {
+        margin-bottom: 16px;
+    }
+
+    .c-dialog & {
+        margin-bottom: 22px;
+        padding-right: 30px;
+    }
 }
 .c-feedbacks__item-userpic {
     position: absolute;
@@ -47,8 +66,8 @@
     }
 }
 .c-feedbacks__item-name {
-    margin-bottom: 8px;
-    font-size: toRem(14);
+    margin-bottom: 7px;
+    font-size: toRem(16);
     font-weight: 500;
 }
 .c-feedbacks__item-source {
@@ -64,20 +83,61 @@
 }
 .c-feedbacks__item-body {
     position: relative;
-    height: calc(15px * 1.6 * 3);
-    margin-bottom: 18px;
     overflow: hidden;
-    margin-bottom: 24px;
-    font-size: toRem(15);
-    line-height: 1.6;
-    
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    font-size: toRem(16);
+    line-height: 1.5;
     
     @include Mobile {
-        height: calc(13px * 1.6 * 3);
-        font-size: toRem(13);
+        font-size: toRem(14);
+        line-height: 1.7;
+    }
+    
+    .swiper-slide & {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        height: calc(16px * 1.5 * 3);
+
+        @include Mobile {
+            height: calc(14px * 1.7 * 3);
+        }
+    }
+    &.not-limited {
+        display: block;
+        height: auto;
+    }
+}
+.c-feedbacks__btn-full-wrap {
+    height: 26px;
+    margin-bottom: 32px;
+
+    @include SmallDesktop {
+        margin-bottom: 24px;
+    }
+    @include Mobile {
+        margin-bottom: 14px;
+    }
+
+    .c-dialog & {
+        height: 20px;
+        margin-bottom: 0;
+    }
+}
+.c-feedbacks__btn-full {
+    font-size: toRem(16);
+    color: #338DF5;
+    cursor: pointer;
+
+    @include Mobile {
+        font-size: toRem(14);
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    .c-dialog & {
+        display: none;
     }
 }
 .c-feedbacks__pagination {

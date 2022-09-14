@@ -1,6 +1,7 @@
 import "../css/index.scss";
 
 // import "./google";
+import "./dialog";
 
 document.addEventListener("DOMContentLoaded", () => {
     const navBtn = document.querySelector(".header__nav-btn");
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (feedbackCarousel && typeof Swiper === 'function') {
         new Swiper(feedbackCarousel, {
             slidesPerView: 1,
-            spaceBetween: 21,
+            spaceBetween: 32,
             pagination: {
               el: '.c-feedbacks__pagination',
               dynamicBullets: true,
@@ -29,8 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 prevEl: '.c-feedbacks__prev',
             },
             breakpoints: {
+                1200: {
+                  slidesPerView: 3,
+                  spaceBetween: 32,
+                },
                 1024: {
                   slidesPerView: 3,
+                  spaceBetween: 24,
                 },
                 744: {
                   slidesPerView: 2,
@@ -38,6 +44,28 @@ document.addEventListener("DOMContentLoaded", () => {
             },
         });
     }
+    const feedbackItems = document.querySelectorAll('.c-feedbacks__item');
+    [].forEach.call(feedbackItems, (item) => {
+      const body = item.querySelector('.c-feedbacks__item-body');
+      const bodyCopy = body.cloneNode(true);
+      bodyCopy.classList.add('not-limited');
+      item.appendChild(bodyCopy);
+
+      if(body.offsetHeight < bodyCopy.offsetHeight){
+        item.querySelector('.c-feedbacks__btn-full').addEventListener('click', (e) => {
+          window.openDialog({
+            html: item.innerHTML,
+            title: e.target.getAttribute('data-title'),
+            className: 'dialog-full-feedback',
+            overlayClose: false,
+            back: e.target,
+          });
+        });
+      } else {
+        item.querySelector('.c-feedbacks__btn-full').remove();
+      }
+      bodyCopy.remove();
+    });
 
     const appScreenshotCarousel = document.querySelector('.c-app__imgs');
     const appScreenshot = document.querySelector('.c-app__desktop-img');
