@@ -16,7 +16,8 @@
         "googlePlayImageName": "googleplay_ru",
         "appstoreImageAlt": "Скачать в AppStore",
         "googlePlayImageAlt": "Получить в Google Play",
-        "externalLinkWarning": "Откроется в новом окне"
+        "externalLinkWarning": "Откроется в новом окне",
+        "closeDialog": "Закрыть диалог"
     },
     "en": {
         "langName": {
@@ -35,7 +36,8 @@
         "googlePlayImageName": "googleplay_us",
         "appstoreImageAlt": "Download in AppStore",
         "googlePlayImageAlt": "Get it on Google Play",
-        "externalLinkWarning": "Opens a new window"
+        "externalLinkWarning": "Opens a new window",
+        "closeDialog": "Close dialog"
     },
     "zh": {
         "langName": {
@@ -54,6 +56,7 @@
         "googlePlayImageName": "googleplay_cn",
         "appstoreImageAlt": "在 AppStore 中下载",
         "googlePlayImageAlt": "在 Google Play 上获取",
-        "externalLinkWarning": "打開一個新窗口"
+        "externalLinkWarning": "打開一個新窗口",
+        "closeDialog": "關閉對話框"
     }
 }

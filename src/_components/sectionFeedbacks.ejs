@@ -18,27 +18,23 @@
             />
           </div>
           <div class="c-feedbacks__item-name"><%= post.author %></div>
-          <div
-            class="c-feedbacks__item-rate"
-            style="width: <%= Number(post.rate) * 22 %>px"
-          >
-            <span class="u-visually-hidden"
-              ><%= sectionFeedbacks[locale].rate %> <%= post.rate %></span
-            >
+          <div class="c-feedbacks__item-rate" style="width: <%= Number(post.rate) * 22 %>px">
+            <span class="u-visually-hidden"><%= sectionFeedbacks[locale].rate %> <%= post.rate %></span>
           </div>
         </div>
         <div class="c-feedbacks__item-body"><%= post.body %></div>
+        <div class="c-feedbacks__btn-full-wrap">
+          <div class="c-feedbacks__btn-full" role="button" data-title="<%= sectionFeedbacks[locale].fullTextDialog %>">
+            <%= sectionFeedbacks[locale].fullTextBtn %>
+          </div>
+        </div>
         <div class="c-feedbacks__item-source">
           <% if(post.source === 'app store'){ %>
           <div class="c-feedbacks__from-apple"></div>
-          <span class="u-visually-hidden"
-            ><%= sectionFeedbacks[locale].publishedAt %> Apple App Store</span
-          >
+          <span class="u-visually-hidden"><%= sectionFeedbacks[locale].publishedAt %> Apple App Store</span>
           <% } %> <% if(post.source === 'google play'){ %>
           <div class="c-feedbacks__from-google"></div>
-          <span class="u-visually-hidden"
-            ><%= sectionFeedbacks[locale].publishedAt %> Google Play Store</span
-          >
+          <span class="u-visually-hidden"><%= sectionFeedbacks[locale].publishedAt %> Google Play Store</span>
           <% } %>
         </div>
       </div>
