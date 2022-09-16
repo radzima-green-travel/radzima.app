@@ -10,31 +10,38 @@
       <% feedbacks.forEach((post) => { %>
       <div class="swiper-slide c-feedbacks__item">
         <div class="c-feedbacks__item-head">
-          <div class="c-feedbacks__item-userpic">
-            <img
-              src="https://eu.ui-avatars.com/api/?background=random&name=<%= post.author.replace(/\s/g, '%20') %>&size=48"
-              alt="<%= post.author %>"
-              aria-hidden="true"
-            />
-          </div>
+          <div class="c-feedbacks__item-userpic"><%- post.image %></div>
           <div class="c-feedbacks__item-name"><%= post.author %></div>
-          <div class="c-feedbacks__item-rate" style="width: <%= Number(post.rate) * 22 %>px">
-            <span class="u-visually-hidden"><%= sectionFeedbacks[locale].rate %> <%= post.rate %></span>
+          <div
+            class="c-feedbacks__item-rate"
+            style="width: <%= Number(post.rate) * 22 %>px"
+          >
+            <span class="u-visually-hidden"
+              ><%= sectionFeedbacks[locale].rate %> <%= post.rate %></span
+            >
           </div>
         </div>
         <div class="c-feedbacks__item-body"><%= post.body %></div>
         <div class="c-feedbacks__btn-full-wrap">
-          <div class="c-feedbacks__btn-full" role="button" data-title="<%= sectionFeedbacks[locale].fullTextDialog %>">
+          <div
+            class="c-feedbacks__btn-full"
+            role="button"
+            data-title="<%= sectionFeedbacks[locale].fullTextDialog %>"
+          >
             <%= sectionFeedbacks[locale].fullTextBtn %>
           </div>
         </div>
         <div class="c-feedbacks__item-source">
           <% if(post.source === 'app store'){ %>
           <div class="c-feedbacks__from-apple"></div>
-          <span class="u-visually-hidden"><%= sectionFeedbacks[locale].publishedAt %> Apple App Store</span>
+          <span class="u-visually-hidden"
+            ><%= sectionFeedbacks[locale].publishedAt %> Apple App Store</span
+          >
           <% } %> <% if(post.source === 'google play'){ %>
           <div class="c-feedbacks__from-google"></div>
-          <span class="u-visually-hidden"><%= sectionFeedbacks[locale].publishedAt %> Google Play Store</span>
+          <span class="u-visually-hidden"
+            ><%= sectionFeedbacks[locale].publishedAt %> Google Play Store</span
+          >
           <% } %>
         </div>
       </div>

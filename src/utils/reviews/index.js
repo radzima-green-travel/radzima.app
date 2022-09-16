@@ -1,3 +1,5 @@
+const Promise = require("bluebird");
+
 const jwt = require("jsonwebtoken");
 const axios = require("axios");
 const { google } = require("googleapis");
@@ -76,19 +78,18 @@ async function getReviewsAppleStoreData() {
 
     return axios(req);
   }, 5).then(({ data }) => {
-    return Promise.all(
-      data.data.map(async (it) => {
-        const imageName = await saveAuthorIcon(it.attributes.reviewerNickname);
-        return {
-          author: it.attributes.reviewerNickname,
-          source: "app store",
-          rate: it.attributes.rating,
-          body: it.attributes.body,
-          image: imageName,
-          createdDate: it.attributes.createdDate,
-        };
-      })
-    );
+    return Promise.map(data.data, async (it) => {
+      const content = await getAuthorIcon(it.attributes.reviewerNickname);
+
+      return {
+        author: it.attributes.reviewerNickname,
+        source: "app store",
+        rate: it.attributes.rating,
+        body: it.attributes.body,
+        image: content,
+        createdDate: it.attributes.createdDate,
+      };
+    });
   });
 }
 
@@ -136,23 +137,19 @@ async function downloadAll() {
     });
 }
 
-async function saveAuthorIcon(authorName) {
-  const imageName = `${crypto
-    .createHash("md5")
-    .update(authorName)
-    .digest("hex")}.svg`;
+async function getAuthorIcon(authorName) {
+  const content = (
+    await axios.get(
+      `https://eu.ui-avatars.com/api/?background=random&name=${encodeURIComponent(
+        authorName
+      )}&size=48&format=svg`,
+      {
+        responseEncoding: "utf8",
+      }
+    )
+  ).data;
 
-  fs.writeFileSync(
-    path.resolve(__dirname, "../../images/reviews", imageName),
-    (
-      await axios.get(
-        `https://eu.ui-avatars.com/api/?background=random&name=${encodeURIComponent(
-          authorName
-        )}&size=48`
-      )
-    ).data
-  );
-  return imageName;
+  return content;
 }
 
 async function getReviewsGooglePlayData() {
@@ -182,14 +179,13 @@ async function getReviewsGooglePlayData() {
         packageName: PACKAGE_NAME,
         reviewId: reviewId,
       });
-      const imageName = await saveAuthorIcon(data.authorName);
-
+      const content = await getAuthorIcon(data.authorName);
       result.push({
         author: data.authorName,
         source: "google play",
         rate: data.comments[0].userComment.starRating,
         body: review["Review Text"],
-        image: imageName,
+        image: content,
         createdDate: review["Review Submit Date and Time"],
       });
     }
