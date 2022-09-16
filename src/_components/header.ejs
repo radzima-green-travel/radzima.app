@@ -7,7 +7,10 @@
             <%- include('/lang') %>
         </div>
 
-        <button type="button" class="header__nav-btn u-mobile-only" aria-label="<%= lang[locale].navigation %>"></button>
+        <button type="button" class="header__nav-btn u-mobile-only">
+            <span class="u-visually-hidden header__nav-btn-text-open"><%= lang[locale].navigation %></span>
+            <span class="u-visually-hidden header__nav-btn-text-close"><%= lang[locale].closeDialog %></span>
+        </button>
         <div class="header__nav-content u-mobile-only">
             <div class="header__lang">
                 <%- include('/lang') %>

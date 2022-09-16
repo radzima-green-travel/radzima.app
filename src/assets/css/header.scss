@@ -46,6 +46,17 @@
         background: #000;
     }
 }
+.header__nav-btn-text-close {
+    display: none;
+}
+.mobile-nav-opened {
+    .header__nav-btn-text-open {
+        display: none;
+    }
+    .header__nav-btn-text-close {
+        display: block;
+    }
+}
 
 .header__nav-content {
     display: none;
