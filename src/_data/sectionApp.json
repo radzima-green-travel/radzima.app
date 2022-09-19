@@ -6,21 +6,24 @@
         "title": "Выбирай интересные локации",
         "body": "Заповедные территории, памятники и музеи, культурные объекты и места отдыха - более 500 уникальных локаций.",
         "id": "screenshot-app-1",
-        "src": "/images/screenshot-app-1.png",
+        "src": "/images/slides/step1-ru.jpg",
+        "srcM": "/images/slides/step1-ru-m.jpg",
         "alt": "Screenshot of mobile app"
       },
       {
         "title": "Строй маршрут",
         "body": "Большой выбор необычных маршрутов с подробным описанием объектов и путей следования.",
         "id": "screenshot-app-2",
-        "src": "/images/screenshot-app-2.png",
+        "src": "/images/slides/step2-ru.jpg",
+        "srcM": "/images/slides/step2-ru-m.jpg",
         "alt": "Screenshot of mobile app"
       },
       {
         "title": "Наслаждайся путешествием",
         "body": "Приглашай друзей, делись своими уникальными находками и отправляйся в новое увлекательное путешествие.",
         "id": "screenshot-app-3",
-        "src": "/images/screenshot-app-3.png",
+        "src": "/images/slides/step3-ru.jpg",
+        "srcM": "/images/slides/step3-ru-m.jpg",
         "alt": "Screenshot of mobile app"
       }
     ]
@@ -32,21 +35,24 @@
         "title": "Choose interesting locations",
         "body": "Protected areas, cultural and recreational sites, monuments and museums - more than 500 unique locations.",
         "id": "screenshot-app-1",
-        "src": "/images/screenshot-app-1.png",
+        "src": "/images/slides/step1-en.jpg",
+        "srcM": "/images/slides/step1-en-m.jpg",
         "alt": "Screenshot of mobile app"
       },
       {
         "title": "Set a route",
         "body": "A great choice of unusual routes with a detailed description of objects and ways to go through.",
         "id": "screenshot-app-2",
-        "src": "/images/screenshot-app-2.png",
+        "src": "/images/slides/step2-en.jpg",
+        "srcM": "/images/slides/step2-en-m.jpg",
         "alt": "Screenshot of mobile app"
       },
       {
         "title": "Enjoy your trip",
         "body": "Invite your friends, share your unique finds and dive into an exciting new journey.",
         "id": "screenshot-app-3",
-        "src": "/images/screenshot-app-3.png",
+        "src": "/images/slides/step3-en.jpg",
+        "srcM": "/images/slides/step3-en-m.jpg",
         "alt": "Screenshot of mobile app"
       }
     ]
@@ -58,21 +64,24 @@
         "title": "選擇有趣的地點",
         "body": "保護區，文化和娛樂場所，紀念碑和博物館 - 超過500個獨特的地點。",
         "id": "screenshot-app-1",
-        "src": "/images/screenshot-app-1.png",
+        "src": "/images/slides/step1-zh.jpg",
+        "srcM": "/images/slides/step1-zh-m.jpg",
         "alt": "Screenshot of mobile app"
       },
       {
         "title": "設置路線",
         "body": "一系列不尋常的路線，並詳細說明瞭物體和要經過的方式。",
         "id": "screenshot-app-2",
-        "src": "/images/screenshot-app-2.png",
+        "src": "/images/slides/step2-zh.jpg",
+        "srcM": "/images/slides/step2-zh-m.jpg",
         "alt": "Screenshot of mobile app"
       },
       {
         "title": "祝您旅途愉快",
         "body": "邀請您的朋友，分享您獨特的發現，並潛入令人興奮的新旅程。",
         "id": "screenshot-app-3",
-        "src": "/images/screenshot-app-3.png",
+        "src": "/images/slides/step3-zh.jpg",
+        "srcM": "/images/slides/step3-zh-m.jpg",
         "alt": "Screenshot of mobile app"
       }
     ]

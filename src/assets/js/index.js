@@ -88,26 +88,25 @@ document.addEventListener("DOMContentLoaded", () => {
           slidesPerView: 1,
           spaceBetween: 30,
           loop: true,
-            pagination: {
-              el: ".c-app__pagination",
-            },
+          pagination: {
+            el: ".c-app__pagination",
+          },
+          on: {
+            slideChange: (slider) => {
+              const currentDescription = document.getElementById(`description-screenshot-app-${slider.realIndex + 1}`);
+              Array.prototype.slice.call(screenshotList).forEach((elem) => (
+                elem !== currentDescription
+                  ? elem.classList.add('u-hidden')
+                  : elem.classList.remove('u-hidden')
+              ));
+            }
+          }
         });
       }
-
-      appScreenshotCarousel.addEventListener('touchend', function() {
-        const currentImg = document.querySelector('.swiper-slide-active');
-        const currentDescription = document.getElementById(`description-${currentImg.firstElementChild.id}`);
-
-        Array.prototype.slice.call(screenshotList).forEach((elem) => (
-          elem !== currentDescription
-            ? elem.classList.add('u-hidden')
-            : elem.classList.remove('u-hidden')
-        ));
-      });
     } else {
       [].forEach.call(document.getElementsByClassName('c-app__grid-cell'), function(elem) {
         elem.addEventListener('click', function() {
-          const path = `../../images/${this.id.replace('description-','')}.png`;
+          const path = elem.getAttribute('data-img');
           const img = document.getElementById('screenshot-app');
 
           img.src = path;
