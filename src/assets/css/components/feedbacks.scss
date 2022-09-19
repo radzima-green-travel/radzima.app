@@ -71,10 +71,29 @@
     font-weight: 500;
 }
 .c-feedbacks__item-source {
-    font-size: toRem(10);
+    line-height: 1;
+}
+.c-feedbacks__appstore {
+    min-height: 30px;
+    padding-left: 46px;
+    background: url(../../images/icon-apple.png) no-repeat;
+}
+.c-feedbacks__googlestore {
+    min-height: 30px;
+    padding-left: 46px;
+    background: url(../../images/icon-google.png) no-repeat;
+}
+.c-feedbacks__store-prefix {
+    margin-bottom: 4px;
+    font-size: toRem(12);
+    line-height: 1;
     color: $color-text;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+}
+.c-feedbacks__store-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    
 }
 .c-feedbacks__item-rate {
     width: 106px;
@@ -185,16 +204,4 @@
     &::before {
         transform: rotate(180deg);
     }
-}
-.c-feedbacks__from-apple {
-    display: inline-block;
-    width: 153px;
-    height: 31px;
-    background: url(../../images/from-apple.svg) no-repeat;
-}
-.c-feedbacks__from-google {
-    display: inline-block;
-    width: 161px;
-    height: 31px;
-    background: url(../../images/from-google.svg) no-repeat;
 }
