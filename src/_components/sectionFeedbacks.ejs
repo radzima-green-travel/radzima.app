@@ -33,15 +33,15 @@
         </div>
         <div class="c-feedbacks__item-source">
           <% if(post.source === 'app store'){ %>
-          <div class="c-feedbacks__from-apple"></div>
-          <span class="u-visually-hidden"
-            ><%= sectionFeedbacks[locale].publishedAt %> Apple App Store</span
-          >
+          <div class="c-feedbacks__appstore">
+            <div class="c-feedbacks__store-prefix"><%= sectionFeedbacks[locale].publishedAt %></div>
+            <div class="c-feedbacks__store-name">Apple App Store</div>
+          </div>
           <% } %> <% if(post.source === 'google play'){ %>
-          <div class="c-feedbacks__from-google"></div>
-          <span class="u-visually-hidden"
-            ><%= sectionFeedbacks[locale].publishedAt %> Google Play Store</span
-          >
+          <div class="c-feedbacks__googlestore">
+            <div class="c-feedbacks__store-prefix"><%= sectionFeedbacks[locale].publishedAt %></div>
+            <div class="c-feedbacks__store-name">Apple App Store</div>
+          </div>
           <% } %>
         </div>
       </div>
