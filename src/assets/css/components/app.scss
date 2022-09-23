@@ -42,7 +42,7 @@
     cursor: pointer;
 
     h3 {
-      color: #239F0F;
+      color: $color-green;
     }
   }
 
@@ -56,7 +56,7 @@
   pointer-events: none;
 
   h3 {
-    color: #239F0F;
+    color: $color-green;
   }
 }
 .c-app__pagination {
@@ -77,7 +77,7 @@
       border: 1px solid rgba(39, 166, 19, 0.1);
 
       h3 {
-        color: #239F0F;
+        color: $color-green;
       }
     }
   }
