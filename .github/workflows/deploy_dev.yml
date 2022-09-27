@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      - release/*
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -38,15 +37,8 @@ jobs:
           BUCKET: ${{ secrets.BUCKET }}
           PACKAGE_NAME: ${{ secrets.PACKAGE_NAME }}
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
-      - name: Deploy to development
-        if: ${{ startsWith(github.ref_name, 'release/') != true }}
+          ENV: dev
+      - name: Copy to S3
         run: aws s3 sync ./dist s3://${{ secrets.BUCKET_DEV }}
       - name: Invalidate cache
-        if: ${{ startsWith(github.ref_name, 'release/') != true }}
         run: aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_DEV }} --paths '/*'
-      - name: Deploy to production
-        if: ${{ startsWith(github.ref_name, 'release/') }}
-        run: aws s3 sync ./dist s3://${{ secrets.BUCKET_PROD }}
-      - name: Invalidate cache
-        if: ${{ startsWith(github.ref_name, 'release/') }}
-        run: aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_PROD }} --paths '/*'
