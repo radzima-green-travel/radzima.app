@@ -22,7 +22,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@master
         with:
-          role-to-assume: arn:aws:iam::242712766417:role/Github-landing-CI-CD
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/Github-landing-CI-CD
           aws-region: eu-central-1
       - name: Use Node.js 16.x
         uses: actions/setup-node@v1
