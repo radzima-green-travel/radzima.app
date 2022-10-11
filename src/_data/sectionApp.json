@@ -58,27 +58,27 @@
     ]
   },
   "zh": {
-    "sectionTitle": "應用程式的工作原理",
+    "sectionTitle": "应用程序的工作原理",
     "items": [
       {
-        "title": "選擇有趣的地點",
-        "body": "保護區，文化和娛樂場所，紀念碑和博物館 - 超過500個獨特的地點。",
+        "title": "选择有趣的地点",
+        "body": "保护区、文化和娱乐场所、纪念碑和博物馆——超过 500 个独特的地点。",
         "id": "screenshot-app-1",
         "src": "/images/slides/step1-zh.jpg",
         "srcM": "/images/slides/step1-zh-m.jpg",
         "alt": "Screenshot of mobile app"
       },
       {
-        "title": "設置路線",
-        "body": "一系列不尋常的路線，並詳細說明瞭物體和要經過的方式。",
+        "title": "建立路线",
+        "body": " 大量不寻常的路线选择，并详细描述了对象和路线。",
         "id": "screenshot-app-2",
         "src": "/images/slides/step2-zh.jpg",
         "srcM": "/images/slides/step2-zh-m.jpg",
         "alt": "Screenshot of mobile app"
       },
       {
-        "title": "祝您旅途愉快",
-        "body": "邀請您的朋友，分享您獨特的發現，並潛入令人興奮的新旅程。",
+        "title": "祝你旅途愉快",
+        "body": "邀请您的朋友，分享您的独特发现并踏上激动人心的新旅程。",
         "id": "screenshot-app-3",
         "src": "/images/slides/step3-zh.jpg",
         "srcM": "/images/slides/step3-zh-m.jpg",

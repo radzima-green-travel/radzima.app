@@ -18,12 +18,12 @@
         "cellRoutes":  "ready to go routes"
     },
     "zh": {
-        "sectionTitle": "拉齊馬的數位",
-        "title": "白俄羅斯旅行的口袋助手",
-        "text": "使用指南應用程式探索國家公園，歷史名勝和目擊景點。",
-        "cellUsers":   "活躍使用者",
-        "cellRate":    "市場評級",
-        "cellObjects": "目錄中有多個地點",
-        "cellRoutes":  "條隨時可用的路線"
+        "sectionTitle": "拉齐马的数字",
+        "title": "白俄罗斯旅行的袖珍助手",
+        "text": "使用指南应用程序探索国家公园、历史遗迹和景点",
+        "cellUsers":   "活跃用户",
+        "cellRate":    "市场评级",
+        "cellObjects": "目录中的 多个位置 ",
+        "cellRoutes":  "条准备好的路线"
     }
 }
