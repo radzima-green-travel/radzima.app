@@ -2,22 +2,16 @@
 if (!sectionPromo[locale]) { locale = site.defaultLocale; }
 %>
 
-<div class="c-promo__cont">
-    <div class="c-promo__sub-cont">
-        <div class="c-promo">
-            <div class="c-promo__body">
-                <h1><%= sectionPromo[locale].title %></h1>
-                <p><%= sectionPromo[locale].text %></p>
-            </div>
-        </div>
+<div class="c-promo">
+    <div class="c-promo__body">
+        <h1><%= sectionPromo[locale].title %></h1>
+        <p><%= sectionPromo[locale].text %></p>
         <div class="c-promo__btns">
             <%- include('/googleplay_badge') %>
             <%- include('/appstore_badge') %>
         </div>
     </div>
-    <div class="c-promo">
-        <div class="c-promo__img">
-            <img src="/images/promo.svg" alt="">
-        </div>
+    <div class="c-promo__img">
+        <img src="/images/promo.svg" alt="">
     </div>
 </div>

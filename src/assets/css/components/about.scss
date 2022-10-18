@@ -1,14 +1,13 @@
 .c-about {
     display: flex;
-    margin: 0 -10px;
-    padding: 20px 0;
+    margin: 0 -10px 80px;
 }
 .c-about__item {
     width: 25%;
     padding: 0 10px 20px;
 
     h3 {
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         font-size: toRem(18);
     }
     p {
@@ -18,7 +17,7 @@
 .c-about__icon {
     width: 40px;
     height: 40px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
 }
 .c-about__icon--search {
     background: url(../../images/icon-search.svg) no-repeat;

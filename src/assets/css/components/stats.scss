@@ -1,14 +1,13 @@
 .c-stats {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 .c-stats__body {
     flex-grow: 1;
     padding-top: 40px;
 
     h3 {
-        max-width: 90%;
-        margin-bottom: 20px;
+        padding-bottom: 32px;
         font-size: toRem(24);
         line-height: 1.45;
     }

@@ -6,7 +6,7 @@
 }
 
 @mixin SmallDesktop {
-    @media (max-width: 1200px) {
+    @media (max-width: 1199px) {
         @content;
     }
 }
@@ -18,7 +18,13 @@
 }
 
 @mixin Mobile {
-    @media (max-width: 743px) {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin MobileMini {
+    @media (max-width: 400px) {
         @content;
     }
 }
@@ -29,11 +35,7 @@
     }
 }
 
-@mixin MobileMini {
-    @media (max-width: 400px) {
-        @content;
-    }
-}
+
 
 @mixin hoverOpacity {
     transition: opacity .3s;

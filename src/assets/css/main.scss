@@ -29,12 +29,17 @@
 }
 
 .container {
-    max-width: 1180px;
+    max-width: 1360px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 32px;
 
+    @include SmallDesktop {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
     @include Mobile {
-        padding: 0 12px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -79,7 +84,7 @@
 }
 
 .c-section-head {
-    margin: 20px 0;
+    margin: 32px 0;
     font-size: toRem(14);
     font-weight: 500;
     color: $color-green;
