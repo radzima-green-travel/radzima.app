@@ -67,23 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
       bodyCopy.remove();
     });
 
-    const appScreenshotCarousel = document.querySelector('.c-app__imgs');
-    const appScreenshot = document.querySelector('.c-app__desktop-img');
-    const screenshotList = document.getElementsByClassName('c-app__grid-cell');
-    const mql = window.matchMedia('(max-width: 400px)');
-
-    if (mql.matches) {
-      appScreenshot.classList.add('u-hidden');
-      appScreenshotCarousel.classList.remove('u-hidden');
-
-      Array.prototype.slice.call(screenshotList).forEach((elem, i) => {
-        elem.classList.remove('c-app__grid-cell__selected');
-        if (i !== 0) {
-          elem.classList.add('u-hidden');
-        }
-      });
-
+    (() => {
+      const appScreenshotCarousel = document.querySelector('.c-app__imgs');
       if (appScreenshotCarousel && typeof Swiper === 'function') {
+        const buttons = document.querySelectorAll('.c-app__grid-cell');
         new Swiper(appScreenshotCarousel, {
           slidesPerView: 1,
           spaceBetween: 30,
@@ -92,31 +79,19 @@ document.addEventListener("DOMContentLoaded", () => {
             el: ".c-app__pagination",
           },
           on: {
-            slideChange: (slider) => {
-              const currentDescription = document.getElementById(`description-screenshot-app-${slider.realIndex + 1}`);
-              Array.prototype.slice.call(screenshotList).forEach((elem) => (
-                elem !== currentDescription
-                  ? elem.classList.add('u-hidden')
-                  : elem.classList.remove('u-hidden')
-              ));
-            }
-          }
+            init: function (swiper) {
+              [].forEach.call(buttons, function(elem) {
+                elem.addEventListener('click', function() {
+                  swiper.slideTo(Number(elem.getAttribute('data-index')) + 1);
+                });
+              });
+            },
+            slideChange: function (swiper) {
+              document.querySelector('.c-app__grid-cell__selected')?.classList.remove('c-app__grid-cell__selected');
+              buttons[swiper.realIndex]?.classList.add('c-app__grid-cell__selected');
+            },
+          },
         });
       }
-    } else {
-      [].forEach.call(document.getElementsByClassName('c-app__grid-cell'), function(elem) {
-        elem.addEventListener('click', function() {
-          const path = elem.getAttribute('data-img');
-          const img = document.getElementById('screenshot-app');
-
-          img.src = path;
-
-          Array.prototype.slice.call(screenshotList).forEach((elem) => (
-            elem !== this
-              ? elem.classList.remove('c-app__grid-cell__selected')
-              : elem.classList.add('c-app__grid-cell__selected')
-          ));
-        });
-      });
-    }
+    })();
 });
