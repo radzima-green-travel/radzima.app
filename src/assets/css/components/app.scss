@@ -59,9 +59,10 @@
   }
 }
 .c-app__grid-cell__selected {
-  background: #F0F8E9;
-  border: 1px solid rgba(39, 166, 19, 0.1);
-  pointer-events: none;
+  &, &:hover {
+    background: #F0F8E9;
+    border: 1px solid rgba(39, 166, 19, 0.1);
+  }
 
   h3 {
     color: $color-green;
