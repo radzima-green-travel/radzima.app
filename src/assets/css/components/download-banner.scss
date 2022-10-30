@@ -77,9 +77,13 @@
 }
 
 @include MobileSmall {
+  .c-download-banner  h2 {
+    text-align: left;
+  }
+
   .c-download-banner__btns_bottom {
-    a:first-child {
-      margin-right: 5px;
-    }
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
   }
 }

@@ -81,3 +81,8 @@
     }
 }
 
+@include MobileSmall {
+  .c-stats__grid {
+    flex-direction: column;
+  }
+}
