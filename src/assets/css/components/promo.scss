@@ -47,13 +47,6 @@
         padding-top: 24px;
     }
 }
-@include MobileSmall {
-  .c-promo__btns {
-      width: calc(100% + 24px);
-      position: relative;
-      left: -12px;
-  }
-}
 
 @include Tablet {
     .c-promo {
@@ -104,8 +97,8 @@
 
 @include MobileSmall {
   .c-promo__btns {
-    a:first-child {
-      margin-right: 5px;
-    }
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
   }
 }

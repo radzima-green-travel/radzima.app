@@ -30,7 +30,7 @@
 }
 
 @mixin MobileSmall {
-    @media (max-width: 350px) {
+    @media (max-width: 375px) {
         @content;
     }
 }
@@ -44,4 +44,3 @@
         opacity: 0.8;
     }
 }
-
