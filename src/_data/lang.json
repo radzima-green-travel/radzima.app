@@ -1,7 +1,31 @@
 {
+    "by": {
+        "iso": "be",
+        "langName": {
+            "ru": "белорусский",
+            "by": "беларускую",
+            "en": "belarusian",
+            "zh": "白俄罗斯人"
+        },
+        "langSwitch": "Змяніць мову на %",
+        "downloadText": "Спампуйце дадатак і пачніце сваё захапляльнае падарожжа па Беларусі",
+        "feedbackBtn": "Звязацца з намі",
+        "footFeedbackTitle": "Дапамажыце нам стаць лепей",
+        "footFeedbackBody": "<p>Раскажыце нам пра свой досвед працы з Radzima.</p><p>Ваша меркаванне зможа паўплываць на развіццё праекта.</p>",
+        "navigation": "Навігацыя",
+        "privacyPolicy": "Палітыка прыватнасці",
+        "appstoreImageName": "appstore_us",
+        "googlePlayImageName": "googleplay_us",
+        "appstoreImageAlt": "Спампаваць у AppStore",
+        "googlePlayImageAlt": "Атрымаць у Google Play",
+        "externalLinkWarning": "Адкрыецца ў новым акне",
+        "closeDialog": "Закрыць дыялог"
+    },
     "ru": {
+        "iso": "ru",
         "langName": {
             "ru": "русский",
+            "by": "рускую",
             "en": "russian",
             "zh": "俄語"
         },
@@ -20,8 +44,10 @@
         "closeDialog": "Закрыть диалог"
     },
     "en": {
+        "iso": "en",
         "langName": {
             "ru": "английский",
+            "by": "ангельскую",
             "en": "english",
             "zh": "英語"
         },
@@ -40,8 +66,10 @@
         "closeDialog": "Close dialog"
     },
     "zh": {
+        "iso": "zh",
         "langName": {
             "ru": "китайский",
+            "by": "кітайскую",
             "en": "chinese",
             "zh": "中文"
         },

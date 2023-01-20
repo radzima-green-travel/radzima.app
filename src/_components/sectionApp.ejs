@@ -5,11 +5,9 @@
       <% sectionApp[locale].items.forEach((item, i) => { %>
         <div class="swiper-slide c-app__img">
           <img id="<%= item.id %>"
-            src="/images/slides/step<%= i + 1 %>-<%= locale %>-m.jpg"
-            srcset='/images/slides/step<%= i + 1 %>-<%= locale %>-m.jpg 400w,
-                    /images/slides/step<%= i + 1 %>-<%= locale %>.jpg 1264w'
-            sizes='(max-width: 400px) 400px,
-                    100vw'
+            src="<%= item.srcM %>"
+            srcset='<%= item.srcM %> 400w, <%= item.src %> 1264w'
+            sizes='(max-width: 400px) 400px, 100vw'
             alt="<%= sectionApp[locale].items[0].alt %>"
           >
         </div>

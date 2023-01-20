@@ -3,6 +3,6 @@ var langs = Object.keys(lang).filter(el => el !== locale);
 var pattern = '^(\/' + locale + ')';
 var reg = new RegExp(pattern, '');
 %>
-<% langs.forEach((lang) => { %>
-<link href="<%= site.url[process.env.ENV || 'dev'] %>/<%= page.url.replace(reg, lang) %>" rel="alternate" hreflang="<%= lang %>">
+<% langs.forEach((lng) => { %>
+<link href="<%= site.url[process.env.ENV || 'dev'] %>/<%= page.url.replace(reg, lng) %>" rel="alternate" hreflang="<%= lang[lng].iso %>">
 <% }); %>

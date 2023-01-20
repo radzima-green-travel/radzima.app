@@ -8,6 +8,15 @@
         "cellObjects": "локаций в каталоге",
         "cellRoutes":  "готовых маршрутов"
     },
+    "by": {
+        "sectionTitle": "radzima ў лічбах",
+        "title": "Кішэнны дапаможнік для падарожжаў па Беларусі",
+        "text": "Адкрый для сябе нацыянальныя паркі, гістарычныя месцы і славутасці з дадаткам-даведнікам.",
+        "cellUsers":   "актыўных карыстальнікаў",
+        "cellRate":    "рэйтынг на маркетах",
+        "cellObjects": "лакацый у каталогу",
+        "cellRoutes":  "гатовых маршрутаў"
+    },
     "en": {
         "sectionTitle": "radzima in numbers",
         "title": "Pocket assistant for travel in Belarus",
