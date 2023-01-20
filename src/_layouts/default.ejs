@@ -9,7 +9,7 @@ lang[locale] = lang[locale] || {};
 const pageDescription = locals.description || site[locale].description;
 const env = process.env.ENV || 'dev';
 %>
-<html lang="<%= locale %>">
+<html lang="<%= lang[locale].iso %>">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

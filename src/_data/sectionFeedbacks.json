@@ -6,6 +6,13 @@
         "fullTextBtn": "Показать полный текст",
         "fullTextDialog": "Полный текст отзыва"
     },
+    "by": {
+        "sectionTitle": "пра нас гавораць",
+        "publishedAt": "Апублікавана ў",
+        "rate": "Адзнака",
+        "fullTextBtn": "Паказаць поўны тэкст",
+        "fullTextDialog": "Поўны тэкст водзыву"
+    },
     "en": {
         "sectionTitle": "About us",
         "publishedAt": "Posted on",

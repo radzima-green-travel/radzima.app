@@ -28,6 +28,35 @@
       }
     ]
   },
+  "by": {
+    "sectionTitle": "як працуе дадатак",
+    "items": [
+      {
+        "title": "Выбірай цікавыя лакацыі",
+        "body": "Запаведныя тэрыторыі, помнікі і музеі, культурныя аб'екты і месцы адпачынку - больш за 500 унікальных лакацый.",
+        "id": "screenshot-app-1",
+        "src": "/images/slides/step1-ru.jpg",
+        "srcM": "/images/slides/step1-ru-m.jpg",
+        "alt": "Screenshot of mobile app"
+      },
+      {
+        "title": "Будуй маршрут",
+        "body": "Вялікі выбар незвычайных маршрутаў з падрабязным апісаннем аб'ектаў і шляхоў прытрымлівання.",
+        "id": "screenshot-app-2",
+        "src": "/images/slides/step2-ru.jpg",
+        "srcM": "/images/slides/step2-ru-m.jpg",
+        "alt": "Screenshot of mobile app"
+      },
+      {
+        "title": "Атрымлівай асалоду ад падарожжа",
+        "body": "Запрашай сяброў, дзяліся сваімі ўнікальнымі знаходкамі і адпраўляйся ў новае займальнае падарожжа.",
+        "id": "screenshot-app-3",
+        "src": "/images/slides/step3-ru.jpg",
+        "srcM": "/images/slides/step3-ru-m.jpg",
+        "alt": "Screenshot of mobile app"
+      }
+    ]
+  },
   "en": {
     "sectionTitle": "how the application works",
     "items": [
