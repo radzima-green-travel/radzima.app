@@ -20,3 +20,59 @@
         color: $color-green;
     }
 }
+
+.c-lang-selector {
+    position: relative;
+
+    &.is-active {
+        .c-lang-selector__dpd {
+            visibility: visible;
+            transform: translateY(5px);
+        }
+    }
+}
+.c-lang-selector__current {
+    padding: 0 26px 0 8px;
+    background: none;
+    border: 0;
+    font-size: toRem(16);
+    font-weight: 600;
+    color: $color-text-head;
+    text-transform: uppercase;
+
+    &::after {
+        content: '';
+        position: absolute; top: 3px; right: 0;
+        width: 24px; height: 24px;
+        background: url(../images/icon-chevron.svg) 50% / contain no-repeat;
+        transform: rotate(90deg);
+    }
+}
+.c-lang-selector__dpd {
+    position: absolute; top: 100%; left: -9px;
+    visibility: hidden;
+    transform: translateY(-10px);
+    min-width: calc(100% + 24px);
+    padding: 8px 16px;
+    border: 1px solid rgba(235, 235, 245, 0.7);
+    border-radius: 8px;
+    font-size: toRem(16);
+    font-weight: 600;
+    color: $color-text-head;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 20px rgba(217, 217, 217, 0.25);
+    transition: transform .3s;
+
+    li {
+        margin: 0 0 3px;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        transition: opacity .3s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

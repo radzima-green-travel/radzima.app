@@ -19,6 +19,13 @@
     margin-right: auto;
     background: url(../images/logo.svg) 50% / cover no-repeat;
 }
+.header__lang {
+    display: flex;
+
+    .c-lang {
+        display: none;
+    }
+}
 .header__nav-btn {
     position: relative;
     width: 36px;
@@ -78,6 +85,9 @@
             li {
                 margin: 0 0 17px;
             }
+        }
+        .c-lang-selector {
+            display: none;
         }
     }
 }
