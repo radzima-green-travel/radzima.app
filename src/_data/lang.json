@@ -1,13 +1,8 @@
 {
     "by": {
         "iso": "be",
-        "langName": {
-            "ru": "белорусский",
-            "by": "беларускую",
-            "en": "belarusian",
-            "zh": "白俄罗斯人"
-        },
-        "langSwitch": "Змяніць мову на %",
+        "langName": "беларуская",
+        "langSwitch": "Змяніць мову на беларускую",
         "downloadText": "Спампуйце дадатак і пачніце сваё захапляльнае падарожжа па Беларусі",
         "feedbackBtn": "Звязацца з намі",
         "footFeedbackTitle": "Дапамажыце нам стаць лепей",
@@ -23,13 +18,8 @@
     },
     "ru": {
         "iso": "ru",
-        "langName": {
-            "ru": "русский",
-            "by": "рускую",
-            "en": "russian",
-            "zh": "俄語"
-        },
-        "langSwitch": "Сменить язык на %",
+        "langName": "русский",
+        "langSwitch": "Сменить язык на русский",
         "downloadText": "Скачайте приложение и начните свое увлекательное путешествие по Беларуси",
         "feedbackBtn": "Связаться с нами",
         "footFeedbackTitle": "Помогите нам стать лучше",
@@ -45,13 +35,8 @@
     },
     "en": {
         "iso": "en",
-        "langName": {
-            "ru": "английский",
-            "by": "ангельскую",
-            "en": "english",
-            "zh": "英語"
-        },
-        "langSwitch": "Switch language to %",
+        "langName": "english",
+        "langSwitch": "Switch language to English",
         "downloadText": "Download the app and start your exciting journey around Belarus",
         "feedbackBtn": "Contact Us",
         "footFeedbackTitle": "Help us to get better",
@@ -67,13 +52,8 @@
     },
     "zh": {
         "iso": "zh",
-        "langName": {
-            "ru": "китайский",
-            "by": "кітайскую",
-            "en": "chinese",
-            "zh": "中文"
-        },
-        "langSwitch": "切換語言為%",
+        "langName": "中文",
+        "langSwitch": "切換語言為中文",
         "downloadText": "下载应用程序，开始您在白俄罗斯的精彩旅程",
         "feedbackBtn": "联系我们",
         "footFeedbackTitle": "帮助我们变得更好",

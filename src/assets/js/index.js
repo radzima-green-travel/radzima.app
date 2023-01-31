@@ -4,6 +4,19 @@ import "../css/index.scss";
 import "./dialog";
 
 document.addEventListener("DOMContentLoaded", () => {
+    const langsSwt = document.querySelector('.c-lang-selector');
+    if (langsSwt) {
+        const langsBtn = langsSwt.querySelector('.c-lang-selector__current');
+        langsBtn.addEventListener('click', function(e){
+          langsSwt.classList.toggle('is-active');
+        });
+        document.body.addEventListener('click', function(e){
+          if(!e.target.closest('.c-lang-selector')){
+            langsSwt.classList.remove('is-active');
+          }
+        });
+    }
+
     const navBtn = document.querySelector(".header__nav-btn");
     if (navBtn) {
         navBtn.addEventListener('click', function(e){
