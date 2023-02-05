@@ -20,7 +20,7 @@ var langs = Object.keys(lang);
 </ul>
 <div class="c-lang-selector">
     <button type="button" class="c-lang-selector__current">
-        <%= lang[locale].langName %>
+        <span class="c-lang-selector__current-name"><%= lang[locale].langName %></span>
     </button>
     <ul class="c-lang-selector__dpd">
     <% langs.forEach((lng) => { 
