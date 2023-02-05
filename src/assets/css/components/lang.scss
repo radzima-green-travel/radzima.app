@@ -25,42 +25,61 @@
     position: relative;
 
     &.is-active {
+        .c-lang-selector__current {
+            z-index: 1;
+
+            &::after {
+                transform: rotate(-90deg);
+            }
+        }
+        .c-lang-selector__current-name {
+            background: #F4F4F6;
+            border-radius: 4px;
+        }
         .c-lang-selector__dpd {
             visibility: visible;
             transform: translateY(5px);
+
+            a {
+                transition: all .3s;
+            }
         }
     }
 }
 .c-lang-selector__current {
-    padding: 0 26px 0 8px;
+    position: relative;
+    padding: 0 27px 0 8px;
     background: none;
     border: 0;
     font-size: toRem(16);
-    font-weight: 600;
-    color: $color-text-head;
+    font-weight: 700;
+    color: #24272D;
     text-transform: uppercase;
 
     &::after {
         content: '';
-        position: absolute; top: 3px; right: 0;
+        position: absolute; top: 5px; right: 0;
         width: 24px; height: 24px;
-        background: url(../images/icon-chevron.svg) 50% / contain no-repeat;
+        background: url(../images/icon-chevron.svg) 50% / 140% no-repeat;
         transform: rotate(90deg);
     }
 }
+.c-lang-selector__current-name {
+    display: block;
+    padding: 3px 9px;
+}
 .c-lang-selector__dpd {
-    position: absolute; top: 100%; left: -9px;
+    position: absolute; top: -8px; left: 3px;
     visibility: hidden;
     transform: translateY(-10px);
-    min-width: calc(100% + 24px);
-    padding: 8px 16px;
-    border: 1px solid rgba(235, 235, 245, 0.7);
-    border-radius: 8px;
+    min-width: calc(100% - 24px);
+    padding: 40px 4px 4px 4px;
+    border-radius: 4px;
     font-size: toRem(16);
-    font-weight: 600;
-    color: $color-text-head;
+    font-weight: 700;
+    color: #24272D;
     text-transform: uppercase;
-    box-shadow: 0px 0px 20px rgba(217, 217, 217, 0.25);
+    box-shadow: 0 15px 15px rgba(221, 223, 228, 0.35);
     transition: transform .3s;
 
     li {
@@ -68,11 +87,24 @@
         list-style: none;
     }
     a {
+        display: block;
+        padding: 3px 9px;
+        border-radius: 4px;
         text-decoration: none;
-        transition: opacity .3s;
-
+        
         &:hover {
-            opacity: 0.7;
+            background: #27A613;
+            color: #fff;
+
         }
     }
 }
+@media (max-width: 1420px) {
+    html[lang="zh"] {
+        .c-lang-selector__dpd {
+            right: 22px; left: auto;
+            text-align: right;
+        }
+    }
+}
+
