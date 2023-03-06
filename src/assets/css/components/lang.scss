@@ -23,18 +23,21 @@
 
 .c-lang-selector {
     position: relative;
+    padding: 4px;
 
     &.is-active {
+        background: #fff;
+        border-radius: 4px;
+
         .c-lang-selector__current {
             z-index: 1;
-
-            &::after {
-                transform: rotate(-90deg);
-            }
-        }
-        .c-lang-selector__current-name {
+            min-width: 100px;
             background: #F4F4F6;
             border-radius: 4px;
+
+            &::after {
+                transform: rotate(180deg);
+            }
         }
         .c-lang-selector__dpd {
             visibility: visible;
@@ -48,20 +51,25 @@
 }
 .c-lang-selector__current {
     position: relative;
-    padding: 0 27px 0 8px;
+    display: block;
+    padding: 0 26px 0 0;
     background: none;
+    border-radius: 4px;
     border: 0;
-    font-size: toRem(16);
-    font-weight: 700;
+    font-size: toRem(14);
+    text-transform: capitalize;
+    text-align: left;
     color: #24272D;
-    text-transform: uppercase;
 
     &::after {
         content: '';
-        position: absolute; top: 5px; right: 0;
+        position: absolute; top: 2px; right: 8px;
         width: 24px; height: 24px;
-        background: url(../images/icon-chevron.svg) 50% / 140% no-repeat;
-        transform: rotate(90deg);
+        background: url(../images/icon-chevron2.svg) 50% no-repeat;
+    }
+
+    &:hover {
+        background: #F4F4F6;
     }
 }
 .c-lang-selector__current-name {
@@ -69,16 +77,15 @@
     padding: 3px 9px;
 }
 .c-lang-selector__dpd {
-    position: absolute; top: -8px; left: 3px;
+    position: absolute; top: -8px; left: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    min-width: calc(100% - 24px);
+    min-width: 100%;
     padding: 40px 4px 4px 4px;
     border-radius: 4px;
-    font-size: toRem(16);
-    font-weight: 700;
+    font-size: toRem(14);
     color: #24272D;
-    text-transform: uppercase;
+    text-transform: capitalize;
     box-shadow: 0 15px 15px rgba(221, 223, 228, 0.35);
     transition: transform .3s;
 
