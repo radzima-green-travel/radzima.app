@@ -12,6 +12,7 @@
     .container {
         display: flex;
         align-items: center;
+        width: 100%;
 
         > div {
             flex: 1 0 auto;
@@ -23,8 +24,6 @@
     text-align: right;
 
     a {
-        text-decoration: none;
-
         @include hoverOpacity;
     }
 }

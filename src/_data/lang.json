@@ -1,6 +1,7 @@
 {
     "by": {
         "iso": "be",
+        "and": "і",
         "langName": "беларуская",
         "langSwitch": "Змяніць мову на беларускую",
         "downloadText": "Спампуйце дадатак і пачніце сваё захапляльнае падарожжа па Беларусі",
@@ -9,6 +10,7 @@
         "footFeedbackBody": "<p>Раскажыце нам пра свой досвед працы з Radzima.</p><p>Ваша меркаванне зможа паўплываць на развіццё праекта.</p>",
         "navigation": "Навігацыя",
         "privacyPolicy": "Палітыка прыватнасці",
+        "termsPage": "Умовы выкарыстання",
         "appstoreImageAlt": "Спампаваць у AppStore",
         "googlePlayImageAlt": "Атрымаць у Google Play",
         "externalLinkWarning": "Адкрыецца ў новым акне",
@@ -16,6 +18,7 @@
     },
     "ru": {
         "iso": "ru",
+        "and": "и",
         "langName": "русский",
         "langSwitch": "Сменить язык на русский",
         "downloadText": "Скачайте приложение и начните свое увлекательное путешествие по Беларуси",
@@ -24,6 +27,7 @@
         "footFeedbackBody": "<p>Расскажите нам о своем опыте работы с Radzima.</p><p>Ваше мнение сможет повлиять на развитие проекта.</p>",
         "navigation": "Навигация",
         "privacyPolicy": "Политика Конфиденциальности",
+        "termsPage": "Условия использования приложения",
         "appstoreImageAlt": "Скачать в AppStore",
         "googlePlayImageAlt": "Получить в Google Play",
         "externalLinkWarning": "Откроется в новом окне",
@@ -31,6 +35,7 @@
     },
     "en": {
         "iso": "en",
+        "and": "and",
         "langName": "english",
         "langSwitch": "Switch language to English",
         "downloadText": "Download the app and start your exciting journey around Belarus",
@@ -39,6 +44,7 @@
         "footFeedbackBody": "<p>Tell us about your experience with Radzima.</p><p>Your opinion can influence the development of the project.</p>",
         "navigation": "Navigation",
         "privacyPolicy": "Privacy Policy",
+        "termsPage": "Terms and Conditions",
         "appstoreImageAlt": "Download in AppStore",
         "googlePlayImageAlt": "Get it on Google Play",
         "externalLinkWarning": "Opens a new window",
@@ -46,6 +52,7 @@
     },
     "zh": {
         "iso": "zh",
+        "and": "和",
         "langName": "中文",
         "langSwitch": "切換語言為中文",
         "downloadText": "下载应用程序，开始您在白俄罗斯的精彩旅程",
@@ -54,6 +61,7 @@
         "footFeedbackBody": "<p>告诉我们您对 Radzima 的体验。</p><p>您的意见会影响项目的发展。</p>",
         "navigation": "導航",
         "privacyPolicy": "隱私政策",
+        "termsPage": "条款和条件",
         "appstoreImageAlt": "在 AppStore 中下载",
         "googlePlayImageAlt": "在 Google Play 上获取",
         "externalLinkWarning": "打開一個新窗口",

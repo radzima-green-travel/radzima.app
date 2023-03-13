@@ -1,0 +1,28 @@
+---
+date: Last Modified
+---
+<!DOCTYPE html>
+<%
+locale = locale || 'ru';
+site[locale] = site[locale] || {};
+lang[locale] = lang[locale] || {};
+%>
+<html lang="<%= lang[locale].iso %>">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title><%= locals.title %></title>
+<link rel="stylesheet" href="/assets/main.css?<%- cacheBust.mainCss %>" />
+<link rel="icon" type="image/png" href="/images/logo-icon.svg" />
+</head>
+<body>
+
+<div class="page-layout">
+  <main class="main">
+    <%- content -%>
+  </main>
+</div>
+
+</body>
+</html>
