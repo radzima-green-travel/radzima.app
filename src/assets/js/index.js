@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
             langsSwt.classList.remove('is-active');
           }
         });
+        [].forEach.call(document.querySelectorAll('.header__lang a'), link => {
+            const curr = link.getAttribute('href');
+            link.setAttribute('href', curr.substring(0,3) + window.location.pathname.substring(3));
+        });
     }
 
     const navBtn = document.querySelector(".header__nav-btn");
