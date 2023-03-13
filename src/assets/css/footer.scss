@@ -28,31 +28,25 @@
     }
 }
 
-@include Tablet {
+@include Mobile {
     .footer {
-        flex-direction: column-reverse;
-
         padding-bottom: 20px;
         font-size: toRem(14);
 
         .container {
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
     }
 
-    .footer__links {
+    .footer__copy {
         margin-bottom: 13px;
     }
-}
+    .footer__links {
+        text-align: center;
+        font-size: toRem(16);
 
-@include Mobile {
-    .footer {
-      font-size: toRem(12);
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .container {
-      margin: 0;
+        a {
+            white-space: nowrap;
+        }
     }
 }
