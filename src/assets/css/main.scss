@@ -104,3 +104,63 @@
 .c-sitemap-url {
     font-size: 0.8em;
 }
+
+.page-content {
+    max-width: 650px;
+    font-size: toRem(18);
+    line-height: toRem(32);
+    color: #24272D;
+
+    h1 {
+        margin-bottom: 32px;
+        font-size: toRem(32);
+        font-weight: 700;
+        line-height: toRem(48);
+    }
+    h2 {
+        margin-bottom: 32px;
+        font-size: toRem(24);
+        font-weight: 700;
+        line-height: toRem(32);
+    }
+    h3 {
+        margin-bottom: 32px;
+        font-size: toRem(18);
+        font-weight: 700;
+        line-height: toRem(32);
+        text-transform: uppercase;
+    }
+    p {
+        margin-bottom: 32px;
+    }
+    a {
+        color: #2972C7;
+        text-decoration: none;
+
+        @include hoverOpacity;
+    }
+
+    @include Mobile {
+        font-size: toRem(16);
+        line-height: toRem(24);
+
+        h1 {
+            margin-bottom: 24px;
+            font-size: toRem(28);
+            line-height: toRem(40);
+        }
+        h2 {
+            margin-bottom: 24px;
+            font-size: toRem(20);
+            line-height: toRem(28);
+        }
+        h3 {
+            margin-bottom: 24px;
+            font-size: toRem(16);
+            line-height: toRem(24);
+        }
+        p {
+            margin-bottom: 24px;
+        }
+    }
+}
