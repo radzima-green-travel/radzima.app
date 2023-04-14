@@ -133,6 +133,15 @@
     p {
         margin-bottom: 32px;
     }
+    p + ul {
+        margin-top: -32px;
+    }
+    ul {
+        margin-bottom: 32px;
+    }
+    li {
+        margin-left: 36px;
+    }
     a {
         color: #2972C7;
         text-decoration: none;
@@ -160,6 +169,12 @@
             line-height: toRem(24);
         }
         p {
+            margin-bottom: 24px;
+        }
+        p + ul {
+            margin-top: -24px;
+        }
+        ul {
             margin-bottom: 24px;
         }
     }
