@@ -128,7 +128,7 @@ async function downloadAll() {
       for (let item of data.items) {
         if (item.name.indexOf(PACKAGE_NAME) >= 0) {
           await downloadFile(
-            `${REVIEWS_TEMP}/${item.md5Hash}.csv`,
+            `${REVIEWS_TEMP}/${item.md5Hash.replace(/[\/]/g, '')}.csv`,
             BUCKET,
             item.name
           );
