@@ -12,6 +12,7 @@ BUCKET=
 PACKAGE_NAME=
 ENV=
 GOOGLE_CREDENTIALS={}
+
 ```
 
 2. Env variables are required in order to autogenerate feedbacks, if you want to proceed without it, you can create file `src/_data/_cache/feedbacks.json` with the following content: 
