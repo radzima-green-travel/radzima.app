@@ -61,6 +61,7 @@ async function retry(request, retries) {
   });
 }
 async function getReviewsAppleStoreData() {
+  if (!PRIVATE_KEY || !API_KEY || !ISSUE_ID || !APP_ID) return [];
   const token = getBearerToken(
     ISSUE_ID,
     API_KEY,
@@ -93,17 +94,17 @@ async function getReviewsAppleStoreData() {
   });
 }
 
-const auth = new GoogleAuth({
-  credentials: JSON.parse(GOOGLE_CREDENTIALS),
-  scopes: [
-    "https://www.googleapis.com/auth/devstorage.read_only",
-    "https://www.googleapis.com/auth/androidpublisher",
-  ],
-});
+const auth = GOOGLE_CREDENTIALS
+  ? new GoogleAuth({
+      credentials: JSON.parse(GOOGLE_CREDENTIALS),
+      scopes: [
+        "https://www.googleapis.com/auth/devstorage.read_only",
+        "https://www.googleapis.com/auth/androidpublisher",
+      ],
+    })
+  : null;
 
-const storage = new Storage({
-  authClient: auth,
-});
+const storage = auth ? new Storage({ authClient: auth }) : null;
 
 async function downloadFile(destination, bucketName, fileName) {
   const options = {
@@ -153,6 +154,7 @@ async function getAuthorIcon(authorName) {
 }
 
 async function getReviewsGooglePlayData() {
+  if (!auth) return [];
   const result = [];
   return downloadAll().then(async () => {
     const files = fs.readdirSync(REVIEWS_TEMP);
