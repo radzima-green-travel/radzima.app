@@ -176,11 +176,21 @@ async function getReviewsGooglePlayData() {
       .filter((it) => it["Review Text"]);
     for (let review of reviews) {
       const reviewId = /reviewId=(.*)&/.exec(review["Review Link"])[1];
-      const { data } = await google.androidpublisher("v3").reviews.get({
-        auth,
-        packageName: PACKAGE_NAME,
-        reviewId: reviewId,
-      });
+      let response;
+      try {
+        response = await google.androidpublisher("v3").reviews.get({
+          auth,
+          packageName: PACKAGE_NAME,
+          reviewId: reviewId,
+        });
+      } catch (error) {
+        if (error.response && error.response.status === 404) {
+          console.warn(`Skipping unavailable Google Play review ${reviewId}: HTTP 404`);
+          continue;
+        }
+        throw error;
+      }
+      const { data } = response;
       const content = await getAuthorIcon(data.authorName);
       result.push({
         author: data.authorName,
