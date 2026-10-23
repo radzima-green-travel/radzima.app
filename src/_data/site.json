@@ -1,6 +1,6 @@
 {
   "url": {
-    "dev": "https://d1u39lnww2smbf.cloudfront.net",
+    "dev": "https://landing-dev.radzima.app",
     "prod": "https://radzima.app"
   },
   "appGooglePlay": "https://play.google.com/store/apps/details?id=app.radzima",
