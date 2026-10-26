@@ -1,7 +1,7 @@
 {
   "url": {
     "dev": "https://landing-dev.radzima.app",
-    "prod": "https://radzima.app"
+    "prod": "https://landing.radzima.app"
   },
   "appGooglePlay": "https://play.google.com/store/apps/details?id=app.radzima",
   "appAppleStore": "https://apps.apple.com/app/radzima/id1587158874",
