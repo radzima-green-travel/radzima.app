@@ -42,5 +42,3 @@ jobs:
           ENV: prod
       - name: Deploy to S3
         run: aws s3 sync ./dist s3://${{ secrets.BUCKET_PROD }}
-      - name: Invalidate cache
-        run: aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_PROD }} --paths '/*'
